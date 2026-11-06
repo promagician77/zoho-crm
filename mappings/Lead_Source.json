@@ -1,0 +1,5 @@
+{
+  "field": "Lead_Source",
+  "note": "Meaning-level merges the spelling check cannot find. Decided with the sales manager (sample decisions for the fictional org).",
+  "map": { "Web Form": "Website", "web form": "Website", "Google Adwords": "Google Ads" }
+}

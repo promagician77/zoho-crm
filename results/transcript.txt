@@ -1,0 +1,42 @@
+$ zcrm snapshot --out snapshot.json
+Accounts: 520 records
+Deals: 680 records
+Contacts: 1442 records
+Leads: 3134 records
+Accounts 520, Deals 680, Contacts 1442, Leads 3134 · 43 API calls, 43 credits, 1.4 s
+
+$ zcrm audit snapshot.json --edition Professional
+high     461 records            Records owned by deactivated users
+high     190 extra records      Duplicate leads
+high     136 deals              Open deals past their closing date
+high      42 extra records      Duplicate contacts
+high      12 variant values     Lead Source split across spelling variants
+high       2 rules              Rules that email on every single edit
+high       1 rules              Active workflow rules that do the same thing twice
+medium  5880 numbers            Phone numbers in mixed formats
+medium  1965 leads              Open leads with no activity in 90+ days
+medium   339 deals              Open deals with no activity in 30+ days
+medium   108 leads              Leads that are already contacts
+medium    17 deals              Deals in stages that are no longer in the pipeline
+  ...
+
+$ zcrm plan snapshot.json --mappings mappings/
+{
+ "mergeGroups": 217,
+ "autoMerges": 177,
+ "reviewMerges": 40,
+ "recordsRemovedByAutoMerge": 192,
+ "recordUpdates": 6727,
+ "apiCalls": 250,
+ "apiCredits": 854,
+ "manualSteps": 15
+}
+
+$ zcrm apply plan.json
+DRY RUN: 250 requests (177 merges, 73 update batches). Add --yes to run.
+
+$ zcrm apply plan.json --yes --journal journal.json
+merge calls 177, records updated 6727, errors 0
+
+$ zcrm simulate snapshot.json events.json --edition Standard --licenses 6
+cap 600/day · average 416 · peak 690 · days over cap 11 · e-mails over cap 445

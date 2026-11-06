@@ -1,0 +1,1507 @@
+{
+ "createdFrom": "2026-11-02T12:00:00-05:00",
+ "summary": {
+  "mergeGroups": 40,
+  "autoMerges": 0,
+  "reviewMerges": 40,
+  "recordsRemovedByAutoMerge": 0,
+  "recordUpdates": 0,
+  "apiCalls": 0,
+  "apiCredits": 0,
+  "manualSteps": 18
+ },
+ "merges": [
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105022",
+   "children": [
+    {
+     "id": "6123456000000102220",
+     "fields": [
+      "No_of_Employees",
+      "Product_Interest"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105022",
+     "name": "Hana Allen",
+     "email": "hana.allen@gmail.example",
+     "phone": "+14145557470",
+     "company": "Frontiercrest Labs Corp.",
+     "created": "2025-04-12T10:26:16-05:00"
+    },
+    {
+     "id": "6123456000000102220",
+     "name": "Hana Allen",
+     "email": "hana.allen@frontiercrestlabs.example",
+     "phone": null,
+     "company": "Frontiercrest Labs Corp.",
+     "created": "2025-03-11T10:26:16-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105051",
+   "children": [
+    {
+     "id": "6123456000000102239",
+     "fields": [
+      "Rating",
+      "Region"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105051",
+     "name": "Mateo Walker",
+     "email": "mateo.walker@gmail.example",
+     "phone": "+12065559252",
+     "company": "Brightway Clinics Corp.",
+     "created": "2024-05-21T09:56:12-05:00"
+    },
+    {
+     "id": "6123456000000102239",
+     "name": "Mateo Walker",
+     "email": "mateo.walker@brightwayclinics.example",
+     "phone": "+12065559252",
+     "company": "Brightway Clinics Corp.",
+     "created": "2023-11-15T09:56:12-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105040",
+   "children": [
+    {
+     "id": "6123456000000102278",
+     "fields": [
+      "Trade_Show_2022"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105040",
+     "name": "Gregory Kowalski",
+     "email": "gregory.kowalski@gmail.example",
+     "phone": "+14145559401",
+     "company": "Prairieview Fitness Co.",
+     "created": "2026-05-17T08:38:44-05:00"
+    },
+    {
+     "id": "6123456000000102278",
+     "name": "Gregory Kowalski",
+     "email": "gregory.kowalski@prairieviewfitness.example",
+     "phone": null,
+     "company": "Prairieview Fitness Co.",
+     "created": "2025-10-09T08:38:44-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105050",
+   "children": [
+    {
+     "id": "6123456000000102314",
+     "fields": [
+      "Product_Interest"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105050",
+     "name": "Mei Clark",
+     "email": "mei.clark@gmail.example",
+     "phone": "+13125551309",
+     "company": "Greenridge Medical Ltd",
+     "created": "2026-09-05T18:47:06-05:00"
+    },
+    {
+     "id": "6123456000000102314",
+     "name": "Mei Clark",
+     "email": "mei.clark@greenridgemedical.example",
+     "phone": "+13125551309",
+     "company": "Greenridge Medical Ltd",
+     "created": "2026-06-03T18:47:06-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000102329",
+   "children": [
+    {
+     "id": "6123456000000105039",
+     "fields": [
+      "Mobile",
+      "Preferred_Contact",
+      "Old_CRM_ID"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000102329",
+     "name": "Linda Fischer",
+     "email": "linda.fischer@unionstonehotels.example",
+     "phone": "+14155559766",
+     "company": "Unionstone Hotels Inc.",
+     "created": "2023-12-19T21:37:16-05:00"
+    },
+    {
+     "id": "6123456000000105039",
+     "name": "Linda Fischer",
+     "email": "linda.fischer@gmail.example",
+     "phone": "+14155559766",
+     "company": "Unionstone Hotels Inc.",
+     "created": "2024-06-22T21:37:16-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000102378",
+   "children": [
+    {
+     "id": "6123456000000105026",
+     "fields": [
+      "Phone",
+      "Mobile",
+      "Annual_Revenue"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000102378",
+     "name": "Aisha Rivera",
+     "email": "aisha.rivera@atlasbrookautogroup.example",
+     "phone": null,
+     "company": "Atlasbrook Auto Group Corp.",
+     "created": "2023-12-30T01:15:14-05:00"
+    },
+    {
+     "id": "6123456000000105026",
+     "name": "Aisha Rivera",
+     "email": "aisha.rivera@gmail.example",
+     "phone": "+15125557615",
+     "company": "Atlasbrook Auto Group Corp.",
+     "created": "2024-01-28T01:15:14-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000102383",
+   "children": [
+    {
+     "id": "6123456000000105033",
+     "fields": [
+      "Website",
+      "Product_Interest"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000102383",
+     "name": "Christopher Kaplan",
+     "email": "christopher.kaplan@redhavendistribution.example",
+     "phone": "+17025559261",
+     "company": "Redhaven Distribution Corp.",
+     "created": "2025-06-10T10:14:23-05:00"
+    },
+    {
+     "id": "6123456000000105033",
+     "name": "Chris Kaplan",
+     "email": "chris.kaplan@gmail.example",
+     "phone": "+17025559261",
+     "company": "Redhaven Distribution Corp.",
+     "created": "2025-10-12T10:14:23-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105016",
+   "children": [
+    {
+     "id": "6123456000000102442",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105016",
+     "name": "Jim Hall",
+     "email": "jim.hall@gmail.example",
+     "phone": "+12065553624",
+     "company": "Atlasline Builders LLC",
+     "created": "2025-04-08T19:54:53-05:00"
+    },
+    {
+     "id": "6123456000000102442",
+     "name": "James Hall",
+     "email": "james.hall@atlaslinebuilders.example",
+     "phone": null,
+     "company": "Atlasline Builders LLC",
+     "created": "2025-04-03T19:54:53-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000102475",
+   "children": [
+    {
+     "id": "6123456000000105059",
+     "fields": [
+      "Phone",
+      "Region"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000102475",
+     "name": "Ashley Haddad",
+     "email": "ashley.haddad@falconportlogistics.example",
+     "phone": null,
+     "company": "Falconport Logistics",
+     "created": "2024-09-26T06:00:15-05:00"
+    },
+    {
+     "id": "6123456000000105059",
+     "name": "Ashley Haddad",
+     "email": "ashley.haddad@gmail.example",
+     "phone": "+12065558034",
+     "company": "Falconport Logistics",
+     "created": "2024-10-03T06:00:15-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105028",
+   "children": [
+    {
+     "id": "6123456000000102498",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105028",
+     "name": "Jen Davis",
+     "email": "jen.davis@gmail.example",
+     "phone": "+16175557391",
+     "company": "Harborstone Clinics",
+     "created": "2026-08-28T08:14:26-05:00"
+    },
+    {
+     "id": "6123456000000102498",
+     "name": "Jennifer Davis",
+     "email": "jennifer.davis@harborstoneclinics.example",
+     "phone": "+16175557391",
+     "company": "Harborstone Clinics",
+     "created": "2026-03-27T08:14:26-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000102551",
+   "children": [
+    {
+     "id": "6123456000000105074",
+     "fields": [
+      "Product_Interest"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000102551",
+     "name": "Ingrid White",
+     "email": "ingrid.white@eagleviewdistribution.example",
+     "phone": "+14045555575",
+     "company": "Eagleview Distribution Corp.",
+     "created": "2024-09-08T22:09:02-05:00"
+    },
+    {
+     "id": "6123456000000105074",
+     "name": "Ingrid White",
+     "email": "ingrid.white@gmail.example",
+     "phone": "+14045555575",
+     "company": "Eagleview Distribution Corp.",
+     "created": "2024-11-21T22:09:02-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000102895",
+   "children": [
+    {
+     "id": "6123456000000105152",
+     "fields": [
+      "Annual_Revenue",
+      "Rating",
+      "Budget_Range"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000102895",
+     "name": "Elizabeth Patel",
+     "email": "elizabeth.patel@coastalstonebuilders.example",
+     "phone": "+13125550929",
+     "company": "Coastalstone Builders",
+     "created": "2026-07-28T09:25:05-05:00"
+    },
+    {
+     "id": "6123456000000105152",
+     "name": "Liz Patel",
+     "email": "liz.patel@gmail.example",
+     "phone": "+13125550929",
+     "company": "Coastalstone Builders",
+     "created": "2026-10-31T10:08:37-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105141",
+   "children": [
+    {
+     "id": "6123456000000103163",
+     "fields": [
+      "Product_Interest"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105141",
+     "name": "Alex Moore",
+     "email": "alex.moore@gmail.example",
+     "phone": "+14155558847",
+     "company": "Mapleland Builders Ltd",
+     "created": "2024-06-04T11:18:09-05:00"
+    },
+    {
+     "id": "6123456000000103163",
+     "name": "Alexander Moore",
+     "email": "alexander.moore@maplelandbuilders.example",
+     "phone": null,
+     "company": "Mapleland Builders Ltd",
+     "created": "2024-01-24T11:18:09-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105138",
+   "children": [
+    {
+     "id": "6123456000000103177",
+     "fields": [
+      "Annual_Revenue",
+      "Region"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105138",
+     "name": "Linda O'Brien",
+     "email": "linda.obrien@gmail.example",
+     "phone": "+13035557213",
+     "company": "Redside Foods Ltd",
+     "created": "2025-11-10T05:53:50-05:00"
+    },
+    {
+     "id": "6123456000000103177",
+     "name": "Linda O'Brien",
+     "email": "linda.obrien@redsidefoods.example",
+     "phone": "+13035557213",
+     "company": "Redside Foods Ltd",
+     "created": "2025-07-15T05:53:50-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000103379",
+   "children": [
+    {
+     "id": "6123456000000105176",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000103379",
+     "name": "Arjun Taylor",
+     "email": "arjun.taylor@beaconbrookprinting.example",
+     "phone": "+12125559467",
+     "company": "Beaconbrook Printing",
+     "created": "2025-04-01T13:05:04-05:00"
+    },
+    {
+     "id": "6123456000000105176",
+     "name": "Arjun Taylor",
+     "email": "arjun.taylor@gmail.example",
+     "phone": "+12125559467",
+     "company": "Beaconbrook Printing",
+     "created": "2025-07-05T13:05:04-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000103646",
+   "children": [
+    {
+     "id": "6123456000000105123",
+     "fields": [
+      "Annual_Revenue",
+      "Product_Interest",
+      "Region"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000103646",
+     "name": "Kenneth Jackson",
+     "email": "kenneth.jackson@atlaslandclinics.example",
+     "phone": "+15035551310",
+     "company": "Atlasland Clinics LLC",
+     "created": "2024-03-07T19:42:16-05:00"
+    },
+    {
+     "id": "6123456000000105123",
+     "name": "Kenneth Jackson",
+     "email": "kenneth.jackson@gmail.example",
+     "phone": "+15035551310",
+     "company": "Atlasland Clinics LLC",
+     "created": "2024-09-02T19:42:16-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105086",
+   "children": [
+    {
+     "id": "6123456000000103823",
+     "fields": [
+      "Mobile"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105086",
+     "name": "Nancy Anderson",
+     "email": "nancy.anderson@gmail.example",
+     "phone": "+14155559328",
+     "company": "Oakway Dental",
+     "created": "2024-11-10T06:52:49-05:00"
+    },
+    {
+     "id": "6123456000000103823",
+     "name": "Nancy Anderson",
+     "email": "nancy.anderson@oakwaydental.example",
+     "phone": "+14155559328",
+     "company": "Oakway Dental",
+     "created": "2024-11-06T06:52:49-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000103872",
+   "children": [
+    {
+     "id": "6123456000000105172",
+     "fields": [
+      "Rating"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000103872",
+     "name": "Fatima Moore",
+     "email": "fatima.moore@beaconbrookpackaging.example",
+     "phone": "+16025551900",
+     "company": "Beaconbrook Packaging",
+     "created": "2026-10-08T21:12:20-05:00"
+    },
+    {
+     "id": "6123456000000105172",
+     "name": "Fatima Moore",
+     "email": "fatima.moore@gmail.example",
+     "phone": "+16025551900",
+     "company": "Beaconbrook Packaging",
+     "created": "2026-11-01T03:33:28-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105149",
+   "children": [
+    {
+     "id": "6123456000000103961",
+     "fields": [
+      "No_of_Employees"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105149",
+     "name": "Rebecca Jones",
+     "email": "rebecca.jones@gmail.example",
+     "phone": "+15125556437",
+     "company": "Harborhaven Builders",
+     "created": "2025-02-27T16:28:36-05:00"
+    },
+    {
+     "id": "6123456000000103961",
+     "name": "Rebecca Jones",
+     "email": "rebecca.jones@harborhavenbuilders.example",
+     "phone": "+15125556437",
+     "company": "Harborhaven Builders",
+     "created": "2024-12-22T16:28:36-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000103973",
+   "children": [
+    {
+     "id": "6123456000000105111",
+     "fields": [
+      "Website"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000103973",
+     "name": "James Jones",
+     "email": "james.jones@copperbrookretail.example",
+     "phone": "+17025557749",
+     "company": "Copperbrook Retail Ltd",
+     "created": "2026-02-03T18:07:56-05:00"
+    },
+    {
+     "id": "6123456000000105111",
+     "name": "Jim Jones",
+     "email": "jim.jones@gmail.example",
+     "phone": "+17025557749",
+     "company": "Copperbrook Retail Ltd",
+     "created": "2026-05-15T18:07:56-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105155",
+   "children": [
+    {
+     "id": "6123456000000103995",
+     "fields": [
+      "Industry",
+      "No_of_Employees"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105155",
+     "name": "Andrew Thompson",
+     "email": "andrew.thompson@gmail.example",
+     "phone": "+17025556681",
+     "company": "Oakland Printing Co.",
+     "created": "2026-10-31T00:19:40-05:00"
+    },
+    {
+     "id": "6123456000000103995",
+     "name": "Andrew Thompson",
+     "email": "andrew.thompson@oaklandprinting.example",
+     "phone": null,
+     "company": "Oakland Printing Co.",
+     "created": "2026-05-28T06:31:22-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105167",
+   "children": [
+    {
+     "id": "6123456000000104273",
+     "fields": [
+      "Region"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105167",
+     "name": "Jen Lopez",
+     "email": "jen.lopez@gmail.example",
+     "phone": "+14155551059",
+     "company": "Falconline Packaging Co.",
+     "created": "2025-08-18T03:23:46-05:00"
+    },
+    {
+     "id": "6123456000000104273",
+     "name": "Jennifer Lopez",
+     "email": "jennifer.lopez@falconlinepackaging.example",
+     "phone": null,
+     "company": "Falconline Packaging Co.",
+     "created": "2025-08-16T03:23:46-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105199",
+   "children": [
+    {
+     "id": "6123456000000105200",
+     "fields": [
+      "Website"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105199",
+     "name": "Brian White",
+     "email": "brian.white@pinecresthospitality.example",
+     "phone": "+14045559412",
+     "company": "Pinecrest Hospitality Corp.",
+     "created": "2025-02-25T11:57:06-05:00"
+    },
+    {
+     "id": "6123456000000105200",
+     "name": "Brian White",
+     "email": "bwhite@pinecresthospitality.example",
+     "phone": "+14045559412",
+     "company": "Pinecrest Hospitality Corp.",
+     "created": "2026-05-10T05:22:25-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105201",
+   "children": [
+    {
+     "id": "6123456000000105202",
+     "fields": [
+      "Product_Interest"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105201",
+     "name": "Deborah Jones",
+     "email": "deborah.jones@lakepointclinics.example",
+     "phone": "+14145556142",
+     "company": "Lakepoint Clinics",
+     "created": "2026-09-15T09:23:19-05:00"
+    },
+    {
+     "id": "6123456000000105202",
+     "name": "Deborah Jones",
+     "email": "djones@lakepointclinics.example",
+     "phone": "+14145556142",
+     "company": "Lakepoint Clinics",
+     "created": "2026-04-20T18:52:16-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105204",
+   "children": [
+    {
+     "id": "6123456000000105203",
+     "fields": [
+      "Industry",
+      "Rating"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105204",
+     "name": "Yuki Cohen",
+     "email": "ycohen@willowportfacilities.example",
+     "phone": "+17135551723",
+     "company": "Willowport Facilities Co.",
+     "created": "2025-09-11T12:02:23-05:00"
+    },
+    {
+     "id": "6123456000000105203",
+     "name": "Yuki Cohen",
+     "email": "yuki.cohen@willowportfacilities.example",
+     "phone": "+17135551723",
+     "company": "Willowport Facilities Co.",
+     "created": "2025-10-17T09:52:23-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105205",
+   "children": [
+    {
+     "id": "6123456000000105206",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105205",
+     "name": "Donna Cohen",
+     "email": "donna.cohen@harborwoodclinics.example",
+     "phone": "+17135554882",
+     "company": "Harborwood Clinics",
+     "created": "2025-07-18T09:38:41-05:00"
+    },
+    {
+     "id": "6123456000000105206",
+     "name": "Donna Cohen",
+     "email": "dcohen@harborwoodclinics.example",
+     "phone": "+17135554882",
+     "company": "Harborwood Clinics",
+     "created": "2026-09-04T07:51:27-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105207",
+   "children": [
+    {
+     "id": "6123456000000105208",
+     "fields": [
+      "No_of_Employees",
+      "Rating",
+      "Referral_Partner"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105207",
+     "name": "Mary Scott",
+     "email": "mary.scott@goldenpointfacilities.example",
+     "phone": "+19195556214",
+     "company": "Goldenpoint Facilities Co.",
+     "created": "2026-05-23T02:13:00-05:00"
+    },
+    {
+     "id": "6123456000000105208",
+     "name": "Mary Scott",
+     "email": "mscott@goldenpointfacilities.example",
+     "phone": "+19195556214",
+     "company": "Goldenpoint Facilities Co.",
+     "created": "2024-11-19T08:41:36-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105209",
+   "children": [
+    {
+     "id": "6123456000000105210",
+     "fields": [
+      "Product_Interest",
+      "Budget_Range"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105209",
+     "name": "Rafael Lee",
+     "email": "rafael.lee@maplefieldprinting.example",
+     "phone": "+16175551973",
+     "company": "Maplefield Printing",
+     "created": "2024-09-11T20:47:27-05:00"
+    },
+    {
+     "id": "6123456000000105210",
+     "name": "Rafael Lee",
+     "email": "rlee@maplefieldprinting.example",
+     "phone": "+16175551973",
+     "company": "Maplefield Printing",
+     "created": "2025-04-20T12:31:06-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105212",
+   "children": [
+    {
+     "id": "6123456000000105211",
+     "fields": [
+      "Rating",
+      "Budget_Range"
+     ]
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105212",
+     "name": "Steven Ivanova",
+     "email": "sivanova@copperviewretail.example",
+     "phone": "+14145554528",
+     "company": "Copperview Retail Co.",
+     "created": "2025-05-15T15:21:13-05:00"
+    },
+    {
+     "id": "6123456000000105211",
+     "name": "Steven Ivanova",
+     "email": "steven.ivanova@copperviewretail.example",
+     "phone": "+14145554528",
+     "company": "Copperview Retail Co.",
+     "created": "2025-02-12T08:39:12-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105214",
+   "children": [
+    {
+     "id": "6123456000000105213",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105214",
+     "name": "Stephanie Jones",
+     "email": "sjones@brightpointretail.example",
+     "phone": "+16155559515",
+     "company": "Brightpoint Retail",
+     "created": "2025-01-14T09:27:34-05:00"
+    },
+    {
+     "id": "6123456000000105213",
+     "name": "Stephanie Jones",
+     "email": "stephanie.jones@brightpointretail.example",
+     "phone": "+16155559515",
+     "company": "Brightpoint Retail",
+     "created": "2025-06-16T04:39:47-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Leads",
+   "status": "review",
+   "master": "6123456000000105216",
+   "children": [
+    {
+     "id": "6123456000000105215",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105216",
+     "name": "Rebecca Scott",
+     "email": "rscott@goldenhavenclinics.example",
+     "phone": "+17025550540",
+     "company": "Goldenhaven Clinics Ltd",
+     "created": "2025-05-14T04:32:51-05:00"
+    },
+    {
+     "id": "6123456000000105215",
+     "name": "Rebecca Scott",
+     "email": "rebecca.scott@goldenhavenclinics.example",
+     "phone": "+17025550540",
+     "company": "Goldenhaven Clinics Ltd",
+     "created": "2024-11-19T20:41:53-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000105366",
+   "children": [
+    {
+     "id": "6123456000000100841",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105366",
+     "name": "Rebecca Wright",
+     "email": "rebecca.wright@gmail.example",
+     "phone": "+14155558448",
+     "company": "Prairieway Logistics Inc.",
+     "created": "2026-02-20T22:40:38-05:00"
+    },
+    {
+     "id": "6123456000000100841",
+     "name": "Rebecca Wright",
+     "email": "rebecca.wright@prairiewaylogistics.example",
+     "phone": "+14155558448",
+     "company": "Prairieway Logistics Inc.",
+     "created": "2025-04-06T09:13:35-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000105346",
+   "children": [
+    {
+     "id": "6123456000000100936",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105346",
+     "name": "Amy O'Brien",
+     "email": "amy.obrien@gmail.example",
+     "phone": "+14045551796",
+     "company": "Silverland Hotels Inc.",
+     "created": "2025-12-15T20:08:22-05:00"
+    },
+    {
+     "id": "6123456000000100936",
+     "name": "Amy O'Brien",
+     "email": "amy.obrien@silverlandhotels.example",
+     "phone": "+14045551796",
+     "company": "Silverland Hotels Inc.",
+     "created": "2026-08-09T19:56:51-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000101594",
+   "children": [
+    {
+     "id": "6123456000000105335",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000101594",
+     "name": "Olu Rodriguez",
+     "email": "olu.rodriguez@coastalviewhotels.example",
+     "phone": "+14155552163",
+     "company": "Coastalview Hotels Ltd",
+     "created": "2025-02-28T18:51:53-05:00"
+    },
+    {
+     "id": "6123456000000105335",
+     "name": "Olu Rodriguez",
+     "email": "olu.rodriguez@gmail.example",
+     "phone": "+14155552163",
+     "company": "Coastalview Hotels Ltd",
+     "created": "2025-06-02T10:26:11-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000101629",
+   "children": [
+    {
+     "id": "6123456000000105340",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000101629",
+     "name": "Rachel Schmidt",
+     "email": "rachel.schmidt@greenportprinting.example",
+     "phone": "+14045551285",
+     "company": "Greenport Printing Inc.",
+     "created": "2023-04-13T00:16:07-05:00"
+    },
+    {
+     "id": "6123456000000105340",
+     "name": "Rachel Schmidt",
+     "email": "rachel.schmidt@gmail.example",
+     "phone": "+14045551285",
+     "company": "Greenport Printing Inc.",
+     "created": "2026-10-22T10:03:25-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000101666",
+   "children": [
+    {
+     "id": "6123456000000105344",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000101666",
+     "name": "Michael Petrov",
+     "email": "michael.petrov@northpointpackaging.example",
+     "phone": "+13035550694",
+     "company": "Northpoint Packaging Inc.",
+     "created": "2023-05-19T16:21:27-05:00"
+    },
+    {
+     "id": "6123456000000105344",
+     "name": "Mike Petrov",
+     "email": "mike.petrov@gmail.example",
+     "phone": "+13035550694",
+     "company": "Northpoint Packaging Inc.",
+     "created": "2025-09-17T17:02:19-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000105338",
+   "children": [
+    {
+     "id": "6123456000000101887",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "company"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105338",
+     "name": "Chris Harris",
+     "email": "chris.harris@gmail.example",
+     "phone": "+16025555775",
+     "company": "Stonehaven Dental LLC",
+     "created": "2025-06-09T19:17:02-05:00"
+    },
+    {
+     "id": "6123456000000101887",
+     "name": "Christopher Harris",
+     "email": "christopher.harris@stonehavendental.example",
+     "phone": null,
+     "company": "Stonehaven Dental LLC",
+     "created": "2023-05-17T13:29:57-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000101915",
+   "children": [
+    {
+     "id": "6123456000000105359",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000101915",
+     "name": "Anthony Baker",
+     "email": "anthony.baker@goldenridgepropertymanagement.example",
+     "phone": "+13035550888",
+     "company": "Goldenridge Property Management LLC",
+     "created": "2025-08-27T13:27:43-05:00"
+    },
+    {
+     "id": "6123456000000105359",
+     "name": "Tony Baker",
+     "email": "tony.baker@gmail.example",
+     "phone": "+13035550888",
+     "company": "Goldenridge Property Management LLC",
+     "created": "2026-03-29T23:53:43-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000105360",
+   "children": [
+    {
+     "id": "6123456000000102011",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105360",
+     "name": "Alex Nguyen",
+     "email": "alex.nguyen@gmail.example",
+     "phone": "+14145550589",
+     "company": "Pioneerbrook Printing Corp.",
+     "created": "2025-05-16T02:03:34-05:00"
+    },
+    {
+     "id": "6123456000000102011",
+     "name": "Alexander Nguyen",
+     "email": "alexander.nguyen@pioneerbrookprinting.example",
+     "phone": null,
+     "company": "Pioneerbrook Printing Corp.",
+     "created": "2025-05-31T06:24:38-05:00"
+    }
+   ]
+  },
+  {
+   "module": "Contacts",
+   "status": "review",
+   "master": "6123456000000105327",
+   "children": [
+    {
+     "id": "6123456000000102135",
+     "fields": []
+    }
+   ],
+   "calls": 1,
+   "reasons": [
+    "phone"
+   ],
+   "preview": [
+    {
+     "id": "6123456000000105327",
+     "name": "Lisa Tanaka",
+     "email": "lisa.tanaka@gmail.example",
+     "phone": "+14045559150",
+     "company": "Goldenstone Distribution Co.",
+     "created": "2025-11-26T22:55:46-05:00"
+    },
+    {
+     "id": "6123456000000102135",
+     "name": "Lisa Tanaka",
+     "email": "lisa.tanaka@goldenstonedistribution.example",
+     "phone": null,
+     "company": "Goldenstone Distribution Co.",
+     "created": "2023-07-14T02:54:01-05:00"
+    }
+   ]
+  }
+ ],
+ "updates": [],
+ "manual": [
+  {
+   "area": "Fields",
+   "module": "Deals",
+   "what": "Stage: remove 2 merged variants and 2 unused options after the record updates",
+   "where": "Setup > Modules and Fields > Deals > Stage"
+  },
+  {
+   "area": "Fields",
+   "module": "Deals",
+   "what": "Lead Source: remove 3 merged variants and 21 unused options after the record updates",
+   "where": "Setup > Modules and Fields > Deals > Lead Source"
+  },
+  {
+   "area": "Fields",
+   "module": "Leads",
+   "what": "Lead Source: remove 3 merged variants and 21 unused options after the record updates",
+   "where": "Setup > Modules and Fields > Leads > Lead Source"
+  },
+  {
+   "area": "Fields",
+   "module": "Leads",
+   "what": "Budget Range: remove 0 merged variants and 2 unused options after the record updates",
+   "where": "Setup > Modules and Fields > Leads > Budget Range"
+  },
+  {
+   "area": "Fields",
+   "module": "Contacts",
+   "what": "Lead Source: remove 3 merged variants and 21 unused options after the record updates",
+   "where": "Setup > Modules and Fields > Contacts > Lead Source"
+  },
+  {
+   "area": "Fields",
+   "module": "Leads",
+   "what": "Export then retire \"Fax (alt)\" (10 records filled)",
+   "where": "Setup > Modules and Fields > Leads"
+  },
+  {
+   "area": "Fields",
+   "module": "Leads",
+   "what": "Export then retire \"Trade Show 2022\" (45 records filled)",
+   "where": "Setup > Modules and Fields > Leads"
+  },
+  {
+   "area": "Fields",
+   "module": "Leads",
+   "what": "Export then retire \"Temp Import Batch\" (0 records filled)",
+   "where": "Setup > Modules and Fields > Leads"
+  },
+  {
+   "area": "Fields",
+   "module": "Leads",
+   "what": "Export then retire \"Second Email (old)\" (26 records filled)",
+   "where": "Setup > Modules and Fields > Leads"
+  },
+  {
+   "area": "Fields",
+   "module": "Contacts",
+   "what": "Export then retire \"Birthday Card\" (12 records filled)",
+   "where": "Setup > Modules and Fields > Contacts"
+  },
+  {
+   "area": "Workflows",
+   "what": "Deactivate the copy: \"New web lead - notify owner\" = \"New web lead - notify owner (copy)\"",
+   "where": "Setup > Automation > Workflow Rules"
+  },
+  {
+   "area": "Workflows",
+   "what": "Replace \"Lead changed - notify owner\" (Leads), \"Deal changed - notify owner\" (Deals) with alerts on the changes that matter (new hot lead, stage change) and a daily digest report",
+   "where": "Setup > Automation > Workflow Rules; Reports > Schedule"
+  },
+  {
+   "area": "Workflows",
+   "what": "Delete \"Value Proposition stage task\" (its stage is gone)",
+   "where": "Setup > Automation > Workflow Rules"
+  },
+  {
+   "area": "Workflows",
+   "what": "Confirm or remove \"Push lead to old email tool\": POST to mail-sync (retired 2024)",
+   "where": "Setup > Automation > Actions > Webhooks"
+  },
+  {
+   "area": "Workflows",
+   "what": "Delete inactive/never-run rules: \"Trade show 2022 follow-up\", \"Test rule do not use\", \"Value Proposition stage task\", \"Contact changed - notify owner\"",
+   "where": "Setup > Automation > Workflow Rules"
+  },
+  {
+   "area": "Duplicates",
+   "what": "Turn on duplicate check for Email on web forms and imports so new duplicates stop at the door",
+   "where": "Setup > Modules and Fields > Leads > Email (unique) / Web Forms"
+  },
+  {
+   "area": "Leads",
+   "what": "Assignment rule for new leads (round robin by region) so no lead waits unowned",
+   "where": "Setup > Automation > Assignment Rules"
+  },
+  {
+   "area": "Pipeline",
+   "what": "Make Loss Reason mandatory when Stage = Closed Lost (layout rule or validation rule)",
+   "where": "Setup > Modules and Fields > Deals > Layout Rules"
+  }
+ ]
+}

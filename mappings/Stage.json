@@ -1,0 +1,5 @@
+{
+  "field": "Stage",
+  "note": "Stages removed from the pipeline; open deals in them move to the nearest current stage.",
+  "map": { "Value Proposition": "Needs Analysis", "Id. Decision Makers": "Needs Analysis" }
+}

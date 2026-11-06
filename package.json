@@ -1,0 +1,17 @@
+{
+  "name": "zoho-crm-audit-kit",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Audit and clean up a Zoho CRM org through the v8 API, with a measured sample run and review site.",
+  "engines": { "node": ">=22" },
+  "bin": { "zcrm": "kit/bin/zcrm.mjs" },
+  "scripts": {
+    "test": "node --test kit/test/unit.test.mjs kit/test/api.test.mjs",
+    "seed": "node mock/seed.mjs",
+    "mock": "node mock/server.mjs 8701",
+    "bench": "node bench/run.mjs",
+    "site": "node tools/build-site.mjs",
+    "pdf": "node tools/build-pdf.mjs && node tools/print-pdf.cjs print/print.html dist/zoho-crm-audit-kit.pdf"
+  }
+}

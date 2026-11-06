@@ -1,0 +1,4959 @@
+{
+ "generatedAt": "2026-11-06T00:07:43.131Z",
+ "asOf": "2026-11-02T12:00:00-05:00",
+ "org": {
+  "licenses": 6,
+  "users": 7,
+  "edition": "Professional",
+  "allowance": 13000
+ },
+ "edition": "Professional",
+ "snapshot": {
+  "calls": 43,
+  "credits": 43,
+  "serverCredits": 43,
+  "ms": 1221,
+  "records": {
+   "Accounts": 520,
+   "Deals": 680,
+   "Contacts": 1442,
+   "Leads": 3134
+  }
+ },
+ "auditMs": 164,
+ "duplicates": {
+  "Leads": {
+   "trueGroups": 180,
+   "ours": {
+    "predictedPairs": 205,
+    "truePairs": 210,
+    "truePositives": 196,
+    "falsePositives": 9,
+    "missed": 14,
+    "precision": 0.9560975609756097,
+    "recall": 0.9333333333333333
+   },
+   "loose": {
+    "predictedPairs": 2468,
+    "truePairs": 210,
+    "truePositives": 203,
+    "falsePositives": 2265,
+    "missed": 7,
+    "precision": 0.08225283630470016,
+    "recall": 0.9666666666666667
+   },
+   "exact": {
+    "predictedPairs": 192,
+    "truePairs": 210,
+    "truePositives": 99,
+    "falsePositives": 93,
+    "missed": 111,
+    "precision": 0.515625,
+    "recall": 0.4714285714285714
+   },
+   "missedBy": {
+    "new email, no phone": 14
+   }
+  },
+  "Contacts": {
+   "trueGroups": 42,
+   "ours": {
+    "predictedPairs": 42,
+    "truePairs": 42,
+    "truePositives": 42,
+    "falsePositives": 0,
+    "missed": 0,
+    "precision": 1,
+    "recall": 1
+   },
+   "loose": {
+    "predictedPairs": 2235,
+    "truePairs": 42,
+    "truePositives": 42,
+    "falsePositives": 2193,
+    "missed": 0,
+    "precision": 0.01879194630872483,
+    "recall": 1
+   },
+   "exact": {
+    "predictedPairs": 369,
+    "truePairs": 42,
+    "truePositives": 23,
+    "falsePositives": 346,
+    "missed": 19,
+    "precision": 0.06233062330623306,
+    "recall": 0.5476190476190477
+   }
+  }
+ },
+ "crossModule": {
+  "found": 108,
+  "correct": 105,
+  "planted": 110
+ },
+ "picklists": {
+  "variantsPlanted": 14,
+  "foundBySpelling": 12,
+  "decidedInReview": 3,
+  "wrongMerges": 0,
+  "valuesBefore": 25,
+  "unusedOptions": 7,
+  "groups": [
+   {
+    "canonical": "Website",
+    "members": [
+     [
+      "Website",
+      645
+     ],
+     [
+      "Web Site",
+      61
+     ]
+    ]
+   },
+   {
+    "canonical": "Web Form",
+    "members": [
+     [
+      "Web Form",
+      369
+     ],
+     [
+      "web form",
+      115
+     ]
+    ]
+   },
+   {
+    "canonical": "Google Ads",
+    "members": [
+     [
+      "Google Ads",
+      322
+     ],
+     [
+      "google ads",
+      45
+     ]
+    ]
+   },
+   {
+    "canonical": "LinkedIn",
+    "members": [
+     [
+      "LinkedIn",
+      174
+     ],
+     [
+      "Linkedin",
+      100
+     ],
+     [
+      "Linked In",
+      30
+     ]
+    ]
+   },
+   {
+    "canonical": "Referral",
+    "members": [
+     [
+      "Referral",
+      174
+     ],
+     [
+      "Referal",
+      53
+     ],
+     [
+      "Referrals",
+      25
+     ]
+    ]
+   },
+   {
+    "canonical": "Trade Show",
+    "members": [
+     [
+      "Trade Show",
+      96
+     ],
+     [
+      "Tradeshow",
+      64
+     ],
+     [
+      "Trade Show 2023",
+      63
+     ],
+     [
+      "Trade show",
+      31
+     ]
+    ]
+   },
+   {
+    "canonical": "Email Campaign",
+    "members": [
+     [
+      "Email Campaign",
+      105
+     ],
+     [
+      "Email campaign",
+      26
+     ],
+     [
+      "E-mail Campaign",
+      25
+     ]
+    ]
+   }
+  ]
+ },
+ "plan": {
+  "mergeGroups": 217,
+  "autoMerges": 177,
+  "reviewMerges": 40,
+  "recordsRemovedByAutoMerge": 192,
+  "recordUpdates": 6727,
+  "apiCalls": 250,
+  "apiCredits": 854,
+  "manualSteps": 15,
+  "autoMergeGroupsWrong": 0,
+  "reviewGroupsTrue": 31,
+  "reviewGroupsFalse": 9,
+  "updatesByReason": {
+   "Lead_Source: merge spelling variants": 1918,
+   "Owner: reassign from deactivated users": 453,
+   "Stage: move off retired stages": 17,
+   "Phone/Email: one format": 4339
+  }
+ },
+ "dryRun": {
+  "requests": 250
+ },
+ "apply": {
+  "ms": 12343,
+  "mergeCalls": 177,
+  "updated": 6727,
+  "errors": 0,
+  "clientCredits": 854,
+  "serverCredits": 854,
+  "estimate": 854,
+  "maxInFlight": 5,
+  "rejected429": 0
+ },
+ "secondRun": {
+  "mergeGroups": 40,
+  "autoMerges": 0,
+  "reviewMerges": 40,
+  "recordsRemovedByAutoMerge": 0,
+  "recordUpdates": 0,
+  "apiCalls": 0,
+  "apiCredits": 0,
+  "manualSteps": 15
+ },
+ "findings": {
+  "before": [
+   {
+    "id": "owners.inactive",
+    "area": "Leads & ownership",
+    "title": "Records owned by deactivated users",
+    "severity": "high",
+    "count": 461,
+    "unit": "records",
+    "detail": "Farid Haddad still owns 32 accounts, 43 deals, 78 contacts, 308 leads. Workflow alerts to \"record owner\" on these go nowhere useful."
+   },
+   {
+    "id": "duplicates.Leads",
+    "area": "Data",
+    "title": "Duplicate leads",
+    "severity": "high",
+    "count": 190,
+    "unit": "extra records",
+    "detail": "175 groups, 190 records to merge away (6.1% of Leads). Matched on: email 106, company 18, phone 54."
+   },
+   {
+    "id": "deals.overdue",
+    "area": "Pipeline",
+    "title": "Open deals past their closing date",
+    "severity": "high",
+    "count": 136,
+    "unit": "deals",
+    "detail": "136 of 375 open deals (36%), worth $3,938,800, still count in this quarter's forecast."
+   },
+   {
+    "id": "duplicates.Contacts",
+    "area": "Data",
+    "title": "Duplicate contacts",
+    "severity": "high",
+    "count": 42,
+    "unit": "extra records",
+    "detail": "42 groups, 42 records to merge away (2.9% of Contacts). Matched on: email 28, phone 13, company 1."
+   },
+   {
+    "id": "picklists.leadSource",
+    "area": "Reports",
+    "title": "Lead Source split across spelling variants",
+    "severity": "high",
+    "count": 12,
+    "unit": "variant values",
+    "detail": "25 values in use for what are about 13 sources, plus 7 options nobody uses. A \"leads by source\" report shows \"LinkedIn\", \"Linkedin\" and \"Linked In\" as three bars."
+   },
+   {
+    "id": "workflows.noisy",
+    "area": "Automation",
+    "title": "Rules that email on every single edit",
+    "severity": "high",
+    "count": 2,
+    "unit": "rules",
+    "detail": "\"Lead changed - notify owner\" (Leads), \"Deal changed - notify owner\" (Deals): no criteria, repeat on. These use up the daily e-mail allowance and teach people to ignore CRM mail."
+   },
+   {
+    "id": "workflows.duplicate",
+    "area": "Automation",
+    "title": "Active workflow rules that do the same thing twice",
+    "severity": "high",
+    "count": 1,
+    "unit": "rules",
+    "detail": "\"New web lead - notify owner\" = \"New web lead - notify owner (copy)\". Each matching record sends every alert twice."
+   },
+   {
+    "id": "data.phoneFormats",
+    "area": "Data",
+    "title": "Phone numbers in mixed formats",
+    "severity": "medium",
+    "count": 5880,
+    "unit": "numbers",
+    "detail": "6 different formats across 5,880 numbers; 0 are in international (+1...) form. Mixed formats are why phone-based duplicate checks and click-to-call miss."
+   },
+   {
+    "id": "leads.stale",
+    "area": "Leads & ownership",
+    "title": "Open leads with no activity in 90+ days",
+    "severity": "medium",
+    "count": 1965,
+    "unit": "leads",
+    "detail": "63% of all leads sit in an open status untouched. 161 were never contacted at all after two weeks."
+   },
+   {
+    "id": "deals.idle",
+    "area": "Pipeline",
+    "title": "Open deals with no activity in 30+ days",
+    "severity": "medium",
+    "count": 339,
+    "unit": "deals",
+    "detail": "90% of open deals."
+   },
+   {
+    "id": "duplicates.leadIsContact",
+    "area": "Data",
+    "title": "Leads that are already contacts",
+    "severity": "medium",
+    "count": 108,
+    "unit": "leads",
+    "detail": "Zoho merges only within a module, so these need converting into the existing contact (or deleting) rather than merging."
+   },
+   {
+    "id": "deals.legacyStage",
+    "area": "Pipeline",
+    "title": "Deals in stages that are no longer in the pipeline",
+    "severity": "medium",
+    "count": 17,
+    "unit": "deals",
+    "detail": "Id. Decision Makers, Value Proposition: they drop out of pipeline-by-stage reports."
+   },
+   {
+    "id": "deals.noAmount",
+    "area": "Pipeline",
+    "title": "Deals at proposal stage or later with no amount",
+    "severity": "medium",
+    "count": 9,
+    "unit": "deals",
+    "detail": "Pipeline value and forecast reports under-count these."
+   },
+   {
+    "id": "fields.sparse",
+    "area": "Configuration",
+    "title": "Custom fields filled on under 2% of records",
+    "severity": "medium",
+    "count": 5,
+    "unit": "fields",
+    "detail": "Candidates to retire after exporting their values; they clutter layouts and count against the edition's custom-field limit."
+   },
+   {
+    "id": "workflows.ghost",
+    "area": "Automation",
+    "title": "Active rules waiting for a stage that no longer exists",
+    "severity": "medium",
+    "count": 1,
+    "unit": "rules",
+    "detail": "\"Value Proposition stage task\""
+   },
+   {
+    "id": "workflows.webhooks",
+    "area": "Automation",
+    "title": "Active webhooks to check",
+    "severity": "medium",
+    "count": 1,
+    "unit": "rules",
+    "detail": "\"Push lead to old email tool\": POST to mail-sync (retired 2024)"
+   },
+   {
+    "id": "deals.lossReason",
+    "area": "Pipeline",
+    "title": "Lost deals without a loss reason",
+    "severity": "low",
+    "count": 88,
+    "unit": "deals",
+    "detail": "62% of lost deals; \"why we lose\" reports are mostly blank."
+   },
+   {
+    "id": "data.emails",
+    "area": "Data",
+    "title": "Emails with capitals or stray spaces",
+    "severity": "low",
+    "count": 47,
+    "unit": "emails",
+    "detail": "47 need trimming/lower-casing, 0 are not valid addresses."
+   },
+   {
+    "id": "data.roleEmails",
+    "area": "Data",
+    "title": "Different people sharing info@ / sales@ addresses",
+    "severity": "low",
+    "count": 24,
+    "unit": "leads",
+    "detail": "Not merged: a shared role address is not the same person. Worth asking for a direct address."
+   },
+   {
+    "id": "picklists.unused",
+    "area": "Configuration",
+    "title": "Picklist options nobody uses",
+    "severity": "low",
+    "count": 21,
+    "unit": "options",
+    "detail": "Contacts.Lead_Source: 7, Leads.Lead_Source: 7, Deals.Lead_Source: 7"
+   },
+   {
+    "id": "workflows.dead",
+    "area": "Automation",
+    "title": "Rules that are off, never ran, or not run in a year",
+    "severity": "low",
+    "count": 4,
+    "unit": "rules",
+    "detail": "\"Trade show 2022 follow-up\", \"Test rule do not use\", \"Contact changed - notify owner\", \"Value Proposition stage task\""
+   },
+   {
+    "id": "limits.customFields",
+    "area": "Configuration",
+    "title": "Custom fields vs the Professional limit (155/module)",
+    "severity": "info",
+    "count": 11,
+    "unit": "in the fullest module",
+    "detail": "Contacts 3, Leads 11, Deals 2, Accounts 2"
+   },
+   {
+    "id": "limits.activeRules",
+    "area": "Automation",
+    "title": "Active rules vs the Professional limit (40/module)",
+    "severity": "info",
+    "count": 7,
+    "unit": "in the busiest module",
+    "detail": "Leads 7, Contacts 1, Deals 5"
+   }
+  ],
+  "after": {
+   "deals.overdue": 136,
+   "workflows.noisy": 2,
+   "workflows.duplicate": 1,
+   "picklists.leadSource": 0,
+   "leads.stale": 1866,
+   "deals.idle": 339,
+   "duplicates.leadIsContact": 108,
+   "duplicates.Leads": 31,
+   "duplicates.Contacts": 9,
+   "deals.noAmount": 9,
+   "fields.sparse": 5,
+   "workflows.ghost": 1,
+   "workflows.webhooks": 1,
+   "data.phoneFormats": 0,
+   "deals.lossReason": 88,
+   "picklists.unused": 65,
+   "data.roleEmails": 24,
+   "workflows.dead": 4,
+   "owners.inactive": 0,
+   "data.emails": 0,
+   "limits.customFields": 11,
+   "limits.activeRules": 7,
+   "deals.legacyStage": 0
+  }
+ },
+ "reports": {
+  "sourceBefore": [
+   [
+    "Website",
+    645
+   ],
+   [
+    "Web Form",
+    369
+   ],
+   [
+    "Google Ads",
+    322
+   ],
+   [
+    "Cold Call",
+    204
+   ],
+   [
+    "Referral",
+    174
+   ],
+   [
+    "LinkedIn",
+    174
+   ],
+   [
+    "Google Adwords",
+    171
+   ],
+   [
+    "web form",
+    115
+   ],
+   [
+    "Email Campaign",
+    105
+   ],
+   [
+    "Linkedin",
+    100
+   ],
+   [
+    "Partner",
+    99
+   ],
+   [
+    "Trade Show",
+    96
+   ],
+   [
+    "Chat",
+    84
+   ],
+   [
+    "Tradeshow",
+    64
+   ],
+   [
+    "Trade Show 2023",
+    63
+   ],
+   [
+    "Web Site",
+    61
+   ],
+   [
+    "Referal",
+    53
+   ],
+   [
+    "google ads",
+    45
+   ],
+   [
+    "Trade show",
+    31
+   ],
+   [
+    "Linked In",
+    30
+   ],
+   [
+    "External Referral",
+    28
+   ],
+   [
+    "Email campaign",
+    26
+   ],
+   [
+    "Referrals",
+    25
+   ],
+   [
+    "Employee Referral",
+    25
+   ],
+   [
+    "E-mail Campaign",
+    25
+   ]
+  ],
+  "sourceAfter": [
+   [
+    "Website",
+    1131
+   ],
+   [
+    "Google Ads",
+    504
+   ],
+   [
+    "LinkedIn",
+    295
+   ],
+   [
+    "Trade Show",
+    235
+   ],
+   [
+    "Referral",
+    234
+   ],
+   [
+    "Cold Call",
+    200
+   ],
+   [
+    "Email Campaign",
+    151
+   ],
+   [
+    "Partner",
+    95
+   ],
+   [
+    "Chat",
+    80
+   ],
+   [
+    "External Referral",
+    26
+   ],
+   [
+    "Employee Referral",
+    24
+   ]
+  ],
+  "wonBySourceBefore": [
+   [
+    "Website",
+    1152900
+   ],
+   [
+    "Web Form",
+    822500
+   ],
+   [
+    "Cold Call",
+    641500
+   ],
+   [
+    "web form",
+    534600
+   ],
+   [
+    "Google Ads",
+    520400
+   ],
+   [
+    "Google Adwords",
+    422000
+   ],
+   [
+    "LinkedIn",
+    364300
+   ],
+   [
+    "Email Campaign",
+    358100
+   ],
+   [
+    "Linkedin",
+    303500
+   ],
+   [
+    "Trade Show",
+    303100
+   ],
+   [
+    "Partner",
+    246300
+   ],
+   [
+    "Referral",
+    166100
+   ],
+   [
+    "Referal",
+    116200
+   ],
+   [
+    "Trade Show 2023",
+    105400
+   ],
+   [
+    "Web Site",
+    105100
+   ],
+   [
+    "google ads",
+    100000
+   ],
+   [
+    "Tradeshow",
+    90600
+   ],
+   [
+    "Chat",
+    77700
+   ],
+   [
+    "Email campaign",
+    52800
+   ],
+   [
+    "Trade show",
+    50500
+   ],
+   [
+    "External Referral",
+    25600
+   ],
+   [
+    "Employee Referral",
+    18500
+   ],
+   [
+    "Linked In",
+    4800
+   ]
+  ],
+  "wonBySourceAfter": [
+   [
+    "Website",
+    2615100
+   ],
+   [
+    "Google Ads",
+    1042400
+   ],
+   [
+    "LinkedIn",
+    672600
+   ],
+   [
+    "Cold Call",
+    641500
+   ],
+   [
+    "Trade Show",
+    549600
+   ],
+   [
+    "Email Campaign",
+    410900
+   ],
+   [
+    "Referral",
+    282300
+   ],
+   [
+    "Partner",
+    246300
+   ],
+   [
+    "Chat",
+    77700
+   ],
+   [
+    "External Referral",
+    25600
+   ],
+   [
+    "Employee Referral",
+    18500
+   ]
+  ],
+  "stagesBefore": {
+   "Qualification": {
+    "count": 113,
+    "amount": 2103700
+   },
+   "Proposal/Price Quote": {
+    "count": 106,
+    "amount": 4183800
+   },
+   "Closed Lost": {
+    "count": 141,
+    "amount": 5667700
+   },
+   "Negotiation/Review": {
+    "count": 55,
+    "amount": 2255800
+   },
+   "Closed Won": {
+    "count": 164,
+    "amount": 6582500
+   },
+   "Id. Decision Makers (retired)": {
+    "count": 10,
+    "amount": 365200
+   },
+   "Needs Analysis": {
+    "count": 84,
+    "amount": 2316600
+   },
+   "Value Proposition (retired)": {
+    "count": 7,
+    "amount": 291200
+   }
+  },
+  "stagesAfter": {
+   "Qualification": {
+    "count": 113,
+    "amount": 2103700
+   },
+   "Proposal/Price Quote": {
+    "count": 106,
+    "amount": 4183800
+   },
+   "Closed Lost": {
+    "count": 141,
+    "amount": 5667700
+   },
+   "Negotiation/Review": {
+    "count": 55,
+    "amount": 2255800
+   },
+   "Closed Won": {
+    "count": 164,
+    "amount": 6582500
+   },
+   "Needs Analysis": {
+    "count": 101,
+    "amount": 2973000
+   }
+  },
+  "ownersBefore": {
+   "Farid Haddad": 308,
+   "Chloe Martin": 564,
+   "Dev Patel": 617,
+   "Ben Okafor": 548,
+   "Grace Lim": 544,
+   "Ella Novak": 553
+  },
+  "ownersAfter": {
+   "Dev Patel": 649,
+   "Ben Okafor": 582,
+   "Grace Lim": 559,
+   "Chloe Martin": 597,
+   "Ella Novak": 588
+  },
+  "openDeals": [
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 171
+   },
+   {
+    "stage": "Qualification",
+    "amount": 38300,
+    "overdue": false,
+    "idleDays": 172
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 26700,
+    "overdue": true,
+    "idleDays": 1
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 142
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 32900,
+    "overdue": true,
+    "idleDays": 104
+   },
+   {
+    "stage": "Qualification",
+    "amount": 3500,
+    "overdue": true,
+    "idleDays": 64
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 28600,
+    "overdue": false,
+    "idleDays": 46
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 5200,
+    "overdue": false,
+    "idleDays": 99
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 47100,
+    "overdue": false,
+    "idleDays": 9
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 123
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 58000,
+    "overdue": false,
+    "idleDays": 109
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 15100,
+    "overdue": true,
+    "idleDays": 52
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 8900,
+    "overdue": false,
+    "idleDays": 574
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 8500,
+    "overdue": true,
+    "idleDays": 103
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 85900,
+    "overdue": false,
+    "idleDays": 174
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 65500,
+    "overdue": true,
+    "idleDays": 44
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 61500,
+    "overdue": false,
+    "idleDays": 178
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 48800,
+    "overdue": true,
+    "idleDays": 571
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 108
+   },
+   {
+    "stage": "Qualification",
+    "amount": 5700,
+    "overdue": false,
+    "idleDays": 365
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 27
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 2300,
+    "overdue": true,
+    "idleDays": 289
+   },
+   {
+    "stage": "Qualification",
+    "amount": 44000,
+    "overdue": false,
+    "idleDays": 325
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 75000,
+    "overdue": false,
+    "idleDays": 40
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 324
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 71900,
+    "overdue": false,
+    "idleDays": 161
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 86800,
+    "overdue": false,
+    "idleDays": 139
+   },
+   {
+    "stage": "Qualification",
+    "amount": 56700,
+    "overdue": true,
+    "idleDays": 107
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 40300,
+    "overdue": true,
+    "idleDays": 274
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 409
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 13400,
+    "overdue": false,
+    "idleDays": 252
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 40400,
+    "overdue": false,
+    "idleDays": 699
+   },
+   {
+    "stage": "Qualification",
+    "amount": 28500,
+    "overdue": false,
+    "idleDays": 133
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 31500,
+    "overdue": true,
+    "idleDays": 163
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 13800,
+    "overdue": false,
+    "idleDays": 300
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 45
+   },
+   {
+    "stage": "Qualification",
+    "amount": 34600,
+    "overdue": true,
+    "idleDays": 93
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 73000,
+    "overdue": true,
+    "idleDays": 427
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 17200,
+    "overdue": false,
+    "idleDays": 469
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 33300,
+    "overdue": false,
+    "idleDays": 20
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 6000,
+    "overdue": true,
+    "idleDays": 68
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 68700,
+    "overdue": false,
+    "idleDays": 53
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 33100,
+    "overdue": true,
+    "idleDays": 395
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 78000,
+    "overdue": false,
+    "idleDays": 190
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 6400,
+    "overdue": false,
+    "idleDays": 56
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 29100,
+    "overdue": false,
+    "idleDays": 226
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 69
+   },
+   {
+    "stage": "Qualification",
+    "amount": 65100,
+    "overdue": false,
+    "idleDays": 199
+   },
+   {
+    "stage": "Qualification",
+    "amount": 41400,
+    "overdue": false,
+    "idleDays": 103
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 47
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 27
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 17500,
+    "overdue": true,
+    "idleDays": 97
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 52300,
+    "overdue": true,
+    "idleDays": 3
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 174
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 8600,
+    "overdue": true,
+    "idleDays": 457
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 34300,
+    "overdue": false,
+    "idleDays": 86
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 192
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 2100,
+    "overdue": false,
+    "idleDays": 101
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 21400,
+    "overdue": false,
+    "idleDays": 225
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 379
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 12900,
+    "overdue": false,
+    "idleDays": 109
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 59000,
+    "overdue": true,
+    "idleDays": 41
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 57700,
+    "overdue": true,
+    "idleDays": 132
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 87700,
+    "overdue": true,
+    "idleDays": 126
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 126
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 843
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 39600,
+    "overdue": false,
+    "idleDays": 144
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 45100,
+    "overdue": false,
+    "idleDays": 46
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 44500,
+    "overdue": true,
+    "idleDays": 326
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 2000,
+    "overdue": false,
+    "idleDays": 62
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 57000,
+    "overdue": false,
+    "idleDays": 130
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 1
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 20500,
+    "overdue": false,
+    "idleDays": 3
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 64700,
+    "overdue": false,
+    "idleDays": 427
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 405
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 5000,
+    "overdue": true,
+    "idleDays": 187
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 66200,
+    "overdue": true,
+    "idleDays": 178
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 44300,
+    "overdue": false,
+    "idleDays": 9
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 67300,
+    "overdue": true,
+    "idleDays": 737
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 31000,
+    "overdue": false,
+    "idleDays": 71
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 766
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 68400,
+    "overdue": false,
+    "idleDays": 842
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 238
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 43000,
+    "overdue": true,
+    "idleDays": 436
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 12800,
+    "overdue": false,
+    "idleDays": 94
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 26200,
+    "overdue": true,
+    "idleDays": 188
+   },
+   {
+    "stage": "Qualification",
+    "amount": 79900,
+    "overdue": false,
+    "idleDays": 38
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 41900,
+    "overdue": false,
+    "idleDays": 170
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 53900,
+    "overdue": true,
+    "idleDays": 234
+   },
+   {
+    "stage": "Qualification",
+    "amount": 44700,
+    "overdue": true,
+    "idleDays": 763
+   },
+   {
+    "stage": "Qualification",
+    "amount": 28800,
+    "overdue": true,
+    "idleDays": 123
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 86800,
+    "overdue": true,
+    "idleDays": 15
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 42500,
+    "overdue": false,
+    "idleDays": 291
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 66700,
+    "overdue": false,
+    "idleDays": 242
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 74200,
+    "overdue": false,
+    "idleDays": 41
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 237
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 50600,
+    "overdue": true,
+    "idleDays": 796
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 176
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 30900,
+    "overdue": false,
+    "idleDays": 34
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 398
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 68100,
+    "overdue": true,
+    "idleDays": 5
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 4400,
+    "overdue": true,
+    "idleDays": 97
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 218
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 71000,
+    "overdue": false,
+    "idleDays": 188
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 9600,
+    "overdue": false,
+    "idleDays": 102
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 49100,
+    "overdue": true,
+    "idleDays": 526
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 130
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 48500,
+    "overdue": false,
+    "idleDays": 193
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 38200,
+    "overdue": true,
+    "idleDays": 64
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 17100,
+    "overdue": false,
+    "idleDays": 372
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 755
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 48
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 58600,
+    "overdue": false,
+    "idleDays": 80
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 33200,
+    "overdue": false,
+    "idleDays": 617
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 59100,
+    "overdue": false,
+    "idleDays": 376
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 51
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 81
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 80100,
+    "overdue": false,
+    "idleDays": 365
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 11000,
+    "overdue": true,
+    "idleDays": 130
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 188
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 144
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 47000,
+    "overdue": false,
+    "idleDays": 109
+   },
+   {
+    "stage": "Qualification",
+    "amount": 66000,
+    "overdue": true,
+    "idleDays": 178
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 199
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 34200,
+    "overdue": true,
+    "idleDays": 227
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 0
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 23
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 1200,
+    "overdue": false,
+    "idleDays": 159
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 46400,
+    "overdue": true,
+    "idleDays": 76
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 60
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 62700,
+    "overdue": true,
+    "idleDays": 48
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 34800,
+    "overdue": false,
+    "idleDays": 130
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 427
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 9200,
+    "overdue": false,
+    "idleDays": 196
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 24500,
+    "overdue": false,
+    "idleDays": 414
+   },
+   {
+    "stage": "Qualification",
+    "amount": 45600,
+    "overdue": true,
+    "idleDays": 269
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 32400,
+    "overdue": true,
+    "idleDays": 439
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 19900,
+    "overdue": true,
+    "idleDays": 144
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 11700,
+    "overdue": true,
+    "idleDays": 131
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 86800,
+    "overdue": false,
+    "idleDays": 142
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 66700,
+    "overdue": true,
+    "idleDays": 77
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 49800,
+    "overdue": false,
+    "idleDays": 556
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 108
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 36
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 55400,
+    "overdue": true,
+    "idleDays": 195
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 124
+   },
+   {
+    "stage": "Qualification",
+    "amount": 24700,
+    "overdue": false,
+    "idleDays": 26
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 13500,
+    "overdue": false,
+    "idleDays": 29
+   },
+   {
+    "stage": "Qualification",
+    "amount": 80700,
+    "overdue": true,
+    "idleDays": 50
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 127
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 235
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 80600,
+    "overdue": false,
+    "idleDays": 109
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 33100,
+    "overdue": false,
+    "idleDays": 180
+   },
+   {
+    "stage": "Qualification",
+    "amount": 35200,
+    "overdue": false,
+    "idleDays": 13
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 34100,
+    "overdue": false,
+    "idleDays": 306
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 92
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 41000,
+    "overdue": false,
+    "idleDays": 395
+   },
+   {
+    "stage": "Qualification",
+    "amount": 76300,
+    "overdue": false,
+    "idleDays": 123
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 186
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 5700,
+    "overdue": true,
+    "idleDays": 99
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 131
+   },
+   {
+    "stage": "Qualification",
+    "amount": 7100,
+    "overdue": false,
+    "idleDays": 269
+   },
+   {
+    "stage": "Qualification",
+    "amount": 7200,
+    "overdue": true,
+    "idleDays": 212
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 4
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 15100,
+    "overdue": true,
+    "idleDays": 135
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 38300,
+    "overdue": false,
+    "idleDays": 8
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 32
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 65
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 16400,
+    "overdue": false,
+    "idleDays": 146
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 44600,
+    "overdue": false,
+    "idleDays": 113
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 45
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 99
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 22500,
+    "overdue": false,
+    "idleDays": 92
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 75300,
+    "overdue": true,
+    "idleDays": 520
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 199
+   },
+   {
+    "stage": "Qualification",
+    "amount": 11100,
+    "overdue": false,
+    "idleDays": 3
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 75900,
+    "overdue": false,
+    "idleDays": 691
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 13300,
+    "overdue": false,
+    "idleDays": 35
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 60300,
+    "overdue": false,
+    "idleDays": 70
+   },
+   {
+    "stage": "Qualification",
+    "amount": 51900,
+    "overdue": false,
+    "idleDays": 218
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 67800,
+    "overdue": false,
+    "idleDays": 165
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 31000,
+    "overdue": true,
+    "idleDays": 79
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 30600,
+    "overdue": false,
+    "idleDays": 308
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 61400,
+    "overdue": false,
+    "idleDays": 628
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 161
+   },
+   {
+    "stage": "Qualification",
+    "amount": 89700,
+    "overdue": true,
+    "idleDays": 300
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 89500,
+    "overdue": true,
+    "idleDays": 283
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 18800,
+    "overdue": false,
+    "idleDays": 28
+   },
+   {
+    "stage": "Qualification",
+    "amount": 50200,
+    "overdue": false,
+    "idleDays": 199
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 45900,
+    "overdue": true,
+    "idleDays": 609
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 182
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 79500,
+    "overdue": false,
+    "idleDays": 94
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 318
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 116
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 17600,
+    "overdue": true,
+    "idleDays": 232
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 170
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 47800,
+    "overdue": false,
+    "idleDays": 83
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 31600,
+    "overdue": false,
+    "idleDays": 94
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 76600,
+    "overdue": false,
+    "idleDays": 96
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 61300,
+    "overdue": false,
+    "idleDays": 218
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 74400,
+    "overdue": true,
+    "idleDays": 174
+   },
+   {
+    "stage": "Qualification",
+    "amount": 83200,
+    "overdue": true,
+    "idleDays": 286
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 63
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 85
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 76000,
+    "overdue": false,
+    "idleDays": 116
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 35800,
+    "overdue": false,
+    "idleDays": 691
+   },
+   {
+    "stage": "Qualification",
+    "amount": 18500,
+    "overdue": false,
+    "idleDays": 26
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 71900,
+    "overdue": true,
+    "idleDays": 67
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 185
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 14300,
+    "overdue": false,
+    "idleDays": 128
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 195
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 24400,
+    "overdue": false,
+    "idleDays": 586
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 20
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 58500,
+    "overdue": false,
+    "idleDays": 532
+   },
+   {
+    "stage": "Qualification",
+    "amount": 58600,
+    "overdue": false,
+    "idleDays": 190
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 42300,
+    "overdue": false,
+    "idleDays": 46
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 2600,
+    "overdue": false,
+    "idleDays": 275
+   },
+   {
+    "stage": "Qualification",
+    "amount": 73100,
+    "overdue": false,
+    "idleDays": 228
+   },
+   {
+    "stage": "Qualification",
+    "amount": 56100,
+    "overdue": false,
+    "idleDays": 477
+   },
+   {
+    "stage": "Qualification",
+    "amount": 7600,
+    "overdue": false,
+    "idleDays": 474
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 45200,
+    "overdue": false,
+    "idleDays": 55
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 74300,
+    "overdue": true,
+    "idleDays": 166
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 294
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 21500,
+    "overdue": true,
+    "idleDays": 820
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 41600,
+    "overdue": false,
+    "idleDays": 168
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 44700,
+    "overdue": false,
+    "idleDays": 129
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 80400,
+    "overdue": true,
+    "idleDays": 12
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 61
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 15600,
+    "overdue": true,
+    "idleDays": 94
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 14700,
+    "overdue": false,
+    "idleDays": 141
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 420
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 70100,
+    "overdue": false,
+    "idleDays": 609
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 82500,
+    "overdue": false,
+    "idleDays": 15
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 61
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 23200,
+    "overdue": true,
+    "idleDays": 97
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 72300,
+    "overdue": false,
+    "idleDays": 142
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 643
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 370
+   },
+   {
+    "stage": "Qualification",
+    "amount": 13200,
+    "overdue": false,
+    "idleDays": 89
+   },
+   {
+    "stage": "Qualification",
+    "amount": 56900,
+    "overdue": false,
+    "idleDays": 88
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 4800,
+    "overdue": false,
+    "idleDays": 63
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 163
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 45
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 36000,
+    "overdue": false,
+    "idleDays": 261
+   },
+   {
+    "stage": "Qualification",
+    "amount": 80300,
+    "overdue": true,
+    "idleDays": 98
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 635
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 76000,
+    "overdue": false,
+    "idleDays": 4
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 38700,
+    "overdue": false,
+    "idleDays": 136
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 54900,
+    "overdue": false,
+    "idleDays": 669
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 59900,
+    "overdue": false,
+    "idleDays": 118
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 172
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 42100,
+    "overdue": false,
+    "idleDays": 78
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 58700,
+    "overdue": false,
+    "idleDays": 567
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 137
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 50200,
+    "overdue": false,
+    "idleDays": 36
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 65900,
+    "overdue": true,
+    "idleDays": 443
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 753
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 177
+   },
+   {
+    "stage": "Qualification",
+    "amount": 17700,
+    "overdue": true,
+    "idleDays": 74
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 296
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 21000,
+    "overdue": false,
+    "idleDays": 66
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 46
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 58500,
+    "overdue": false,
+    "idleDays": 92
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 12100,
+    "overdue": false,
+    "idleDays": 25
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 39800,
+    "overdue": false,
+    "idleDays": 310
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 28
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 36500,
+    "overdue": false,
+    "idleDays": 143
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 48500,
+    "overdue": false,
+    "idleDays": 177
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 19900,
+    "overdue": false,
+    "idleDays": 663
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 26300,
+    "overdue": true,
+    "idleDays": 335
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 18700,
+    "overdue": false,
+    "idleDays": 700
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 63000,
+    "overdue": false,
+    "idleDays": 142
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 88000,
+    "overdue": true,
+    "idleDays": 530
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 34000,
+    "overdue": false,
+    "idleDays": 896
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 8600,
+    "overdue": true,
+    "idleDays": 5
+   },
+   {
+    "stage": "Qualification",
+    "amount": 14500,
+    "overdue": false,
+    "idleDays": 592
+   },
+   {
+    "stage": "Qualification",
+    "amount": 35200,
+    "overdue": false,
+    "idleDays": 726
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 174
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 138
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 50
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 8200,
+    "overdue": false,
+    "idleDays": 50
+   },
+   {
+    "stage": "Qualification",
+    "amount": 85200,
+    "overdue": false,
+    "idleDays": 196
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 62500,
+    "overdue": false,
+    "idleDays": 65
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 89900,
+    "overdue": true,
+    "idleDays": 27
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 80700,
+    "overdue": false,
+    "idleDays": 35
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 18
+   },
+   {
+    "stage": "Qualification",
+    "amount": 12700,
+    "overdue": false,
+    "idleDays": 208
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 42800,
+    "overdue": false,
+    "idleDays": 57
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 23000,
+    "overdue": true,
+    "idleDays": 121
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 45400,
+    "overdue": true,
+    "idleDays": 45
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 12400,
+    "overdue": false,
+    "idleDays": 60
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 409
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 41900,
+    "overdue": false,
+    "idleDays": 158
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 1600,
+    "overdue": false,
+    "idleDays": 16
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 38
+   },
+   {
+    "stage": "Qualification",
+    "amount": 63200,
+    "overdue": false,
+    "idleDays": 59
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 66600,
+    "overdue": false,
+    "idleDays": 423
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 485
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 107
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 69400,
+    "overdue": false,
+    "idleDays": 123
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 4300,
+    "overdue": true,
+    "idleDays": 111
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 58
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 7600,
+    "overdue": false,
+    "idleDays": 766
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 84500,
+    "overdue": false,
+    "idleDays": 173
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 108
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 73800,
+    "overdue": true,
+    "idleDays": 96
+   },
+   {
+    "stage": "Qualification",
+    "amount": 4000,
+    "overdue": true,
+    "idleDays": 134
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 3700,
+    "overdue": false,
+    "idleDays": 91
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 27400,
+    "overdue": false,
+    "idleDays": 173
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 11300,
+    "overdue": false,
+    "idleDays": 426
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 80800,
+    "overdue": false,
+    "idleDays": 109
+   },
+   {
+    "stage": "Qualification",
+    "amount": 89200,
+    "overdue": false,
+    "idleDays": 192
+   },
+   {
+    "stage": "Qualification",
+    "amount": 45400,
+    "overdue": false,
+    "idleDays": 170
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 61700,
+    "overdue": true,
+    "idleDays": 543
+   },
+   {
+    "stage": "Qualification",
+    "amount": 21000,
+    "overdue": false,
+    "idleDays": 159
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 35400,
+    "overdue": false,
+    "idleDays": 189
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 26300,
+    "overdue": false,
+    "idleDays": 73
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 59600,
+    "overdue": true,
+    "idleDays": 360
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 42200,
+    "overdue": true,
+    "idleDays": 174
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 126
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 35
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 490
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 75500,
+    "overdue": false,
+    "idleDays": 83
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 113
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 77
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 14600,
+    "overdue": false,
+    "idleDays": 73
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 44200,
+    "overdue": false,
+    "idleDays": 12
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 23400,
+    "overdue": true,
+    "idleDays": 64
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 55200,
+    "overdue": false,
+    "idleDays": 122
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 25100,
+    "overdue": true,
+    "idleDays": 83
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 41000,
+    "overdue": true,
+    "idleDays": 67
+   },
+   {
+    "stage": "Qualification",
+    "amount": 9000,
+    "overdue": false,
+    "idleDays": 33
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 73400,
+    "overdue": false,
+    "idleDays": 457
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 39000,
+    "overdue": false,
+    "idleDays": 414
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 193
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 34900,
+    "overdue": true,
+    "idleDays": 819
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 65600,
+    "overdue": false,
+    "idleDays": 325
+   },
+   {
+    "stage": "Qualification",
+    "amount": 35700,
+    "overdue": true,
+    "idleDays": 253
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 76700,
+    "overdue": false,
+    "idleDays": 48
+   },
+   {
+    "stage": "Qualification",
+    "amount": 5900,
+    "overdue": true,
+    "idleDays": 76
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 42800,
+    "overdue": true,
+    "idleDays": 10
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 12
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 98
+   },
+   {
+    "stage": "Qualification",
+    "amount": 77700,
+    "overdue": false,
+    "idleDays": 120
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 66800,
+    "overdue": false,
+    "idleDays": 445
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 3800,
+    "overdue": true,
+    "idleDays": 186
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 59200,
+    "overdue": false,
+    "idleDays": 475
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 37600,
+    "overdue": false,
+    "idleDays": 147
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 50300,
+    "overdue": false,
+    "idleDays": 446
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 58100,
+    "overdue": false,
+    "idleDays": 220
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 7000,
+    "overdue": false,
+    "idleDays": 80
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 117
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 321
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 420
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 36600,
+    "overdue": false,
+    "idleDays": 531
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 28700,
+    "overdue": false,
+    "idleDays": 150
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 67400,
+    "overdue": true,
+    "idleDays": 713
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 540
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 174
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 853
+   },
+   {
+    "stage": "Qualification",
+    "amount": 65200,
+    "overdue": true,
+    "idleDays": 25
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 3800,
+    "overdue": true,
+    "idleDays": 673
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": true,
+    "idleDays": 168
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 17800,
+    "overdue": true,
+    "idleDays": 181
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 47000,
+    "overdue": false,
+    "idleDays": 732
+   },
+   {
+    "stage": "Qualification",
+    "amount": 57700,
+    "overdue": false,
+    "idleDays": 197
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 89000,
+    "overdue": true,
+    "idleDays": 11
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 47
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 124
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 22100,
+    "overdue": false,
+    "idleDays": 820
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 81500,
+    "overdue": false,
+    "idleDays": 213
+   },
+   {
+    "stage": "Needs Analysis",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 720
+   },
+   {
+    "stage": "Qualification",
+    "amount": 0,
+    "overdue": false,
+    "idleDays": 133
+   },
+   {
+    "stage": "Negotiation/Review",
+    "amount": 76000,
+    "overdue": false,
+    "idleDays": 595
+   },
+   {
+    "stage": "Proposal/Price Quote",
+    "amount": 25800,
+    "overdue": false,
+    "idleDays": 61
+   }
+  ]
+ },
+ "email": {
+  "Standard": {
+   "current": {
+    "edition": "Standard",
+    "licenses": 6,
+    "cap": 600,
+    "days": [
+     {
+      "date": "2026-10-03",
+      "sent": 46,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-04",
+      "sent": 46,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-05",
+      "sent": 540,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-06",
+      "sent": 535,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-07",
+      "sent": 646,
+      "overCap": 46
+     },
+     {
+      "date": "2026-10-08",
+      "sent": 556,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-09",
+      "sent": 646,
+      "overCap": 46
+     },
+     {
+      "date": "2026-10-10",
+      "sent": 36,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-11",
+      "sent": 37,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-12",
+      "sent": 690,
+      "overCap": 90
+     },
+     {
+      "date": "2026-10-13",
+      "sent": 615,
+      "overCap": 15
+     },
+     {
+      "date": "2026-10-14",
+      "sent": 657,
+      "overCap": 57
+     },
+     {
+      "date": "2026-10-15",
+      "sent": 679,
+      "overCap": 79
+     },
+     {
+      "date": "2026-10-16",
+      "sent": 614,
+      "overCap": 14
+     },
+     {
+      "date": "2026-10-17",
+      "sent": 42,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-18",
+      "sent": 29,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-19",
+      "sent": 617,
+      "overCap": 17
+     },
+     {
+      "date": "2026-10-20",
+      "sent": 590,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-21",
+      "sent": 616,
+      "overCap": 16
+     },
+     {
+      "date": "2026-10-22",
+      "sent": 642,
+      "overCap": 42
+     },
+     {
+      "date": "2026-10-23",
+      "sent": 536,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-24",
+      "sent": 68,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-25",
+      "sent": 54,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-26",
+      "sent": 583,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-27",
+      "sent": 562,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-28",
+      "sent": 623,
+      "overCap": 23
+     },
+     {
+      "date": "2026-10-29",
+      "sent": 588,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-30",
+      "sent": 502,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-31",
+      "sent": 43,
+      "overCap": 0
+     },
+     {
+      "date": "2026-11-01",
+      "sent": 45,
+      "overCap": 0
+     }
+    ],
+    "total": 12483,
+    "avg": 416,
+    "peak": 690,
+    "daysOverCap": 11,
+    "dropped": 445,
+    "byRule": {
+     "Lead changed - notify owner": 7177,
+     "Deal changed - notify owner": 1919,
+     "New web lead - notify owner": 845,
+     "New web lead - notify owner (copy)": 845,
+     "Hot lead - task in 1 day": 510,
+     "Stage change - notify manager": 446,
+     "Junk lead - notify manager": 381,
+     "Closed won - tell the team": 360
+    }
+   },
+   "proposed": {
+    "edition": "Standard",
+    "licenses": 6,
+    "cap": 600,
+    "days": [
+     {
+      "date": "2026-10-03",
+      "sent": 13,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-04",
+      "sent": 10,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-05",
+      "sent": 112,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-06",
+      "sent": 95,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-07",
+      "sent": 108,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-08",
+      "sent": 63,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-09",
+      "sent": 116,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-10",
+      "sent": 6,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-11",
+      "sent": 10,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-12",
+      "sent": 134,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-13",
+      "sent": 135,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-14",
+      "sent": 122,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-15",
+      "sent": 133,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-16",
+      "sent": 113,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-17",
+      "sent": 7,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-18",
+      "sent": 6,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-19",
+      "sent": 98,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-20",
+      "sent": 95,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-21",
+      "sent": 109,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-22",
+      "sent": 129,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-23",
+      "sent": 111,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-24",
+      "sent": 22,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-25",
+      "sent": 12,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-26",
+      "sent": 83,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-27",
+      "sent": 97,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-28",
+      "sent": 140,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-29",
+      "sent": 96,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-30",
+      "sent": 90,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-31",
+      "sent": 11,
+      "overCap": 0
+     },
+     {
+      "date": "2026-11-01",
+      "sent": 11,
+      "overCap": 0
+     }
+    ],
+    "total": 2287,
+    "avg": 76,
+    "peak": 140,
+    "daysOverCap": 0,
+    "dropped": 0,
+    "byRule": {
+     "New web lead - notify owner": 845,
+     "Hot lead - task in 1 day": 510,
+     "Junk lead - notify manager": 381,
+     "Closed won - tell the team": 360,
+     "Stage change - notify manager": 191
+    }
+   }
+  },
+  "Professional": {
+   "current": {
+    "edition": "Professional",
+    "licenses": 6,
+    "cap": 1200,
+    "days": [
+     {
+      "date": "2026-10-03",
+      "sent": 46,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-04",
+      "sent": 46,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-05",
+      "sent": 540,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-06",
+      "sent": 535,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-07",
+      "sent": 646,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-08",
+      "sent": 556,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-09",
+      "sent": 646,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-10",
+      "sent": 36,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-11",
+      "sent": 37,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-12",
+      "sent": 690,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-13",
+      "sent": 615,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-14",
+      "sent": 657,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-15",
+      "sent": 679,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-16",
+      "sent": 614,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-17",
+      "sent": 42,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-18",
+      "sent": 29,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-19",
+      "sent": 617,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-20",
+      "sent": 590,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-21",
+      "sent": 616,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-22",
+      "sent": 642,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-23",
+      "sent": 536,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-24",
+      "sent": 68,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-25",
+      "sent": 54,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-26",
+      "sent": 583,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-27",
+      "sent": 562,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-28",
+      "sent": 623,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-29",
+      "sent": 588,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-30",
+      "sent": 502,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-31",
+      "sent": 43,
+      "overCap": 0
+     },
+     {
+      "date": "2026-11-01",
+      "sent": 45,
+      "overCap": 0
+     }
+    ],
+    "total": 12483,
+    "avg": 416,
+    "peak": 690,
+    "daysOverCap": 0,
+    "dropped": 0,
+    "byRule": {
+     "Lead changed - notify owner": 7177,
+     "Deal changed - notify owner": 1919,
+     "New web lead - notify owner": 845,
+     "New web lead - notify owner (copy)": 845,
+     "Hot lead - task in 1 day": 510,
+     "Stage change - notify manager": 446,
+     "Junk lead - notify manager": 381,
+     "Closed won - tell the team": 360
+    }
+   },
+   "proposed": {
+    "edition": "Professional",
+    "licenses": 6,
+    "cap": 1200,
+    "days": [
+     {
+      "date": "2026-10-03",
+      "sent": 13,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-04",
+      "sent": 10,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-05",
+      "sent": 112,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-06",
+      "sent": 95,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-07",
+      "sent": 108,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-08",
+      "sent": 63,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-09",
+      "sent": 116,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-10",
+      "sent": 6,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-11",
+      "sent": 10,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-12",
+      "sent": 134,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-13",
+      "sent": 135,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-14",
+      "sent": 122,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-15",
+      "sent": 133,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-16",
+      "sent": 113,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-17",
+      "sent": 7,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-18",
+      "sent": 6,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-19",
+      "sent": 98,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-20",
+      "sent": 95,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-21",
+      "sent": 109,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-22",
+      "sent": 129,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-23",
+      "sent": 111,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-24",
+      "sent": 22,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-25",
+      "sent": 12,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-26",
+      "sent": 83,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-27",
+      "sent": 97,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-28",
+      "sent": 140,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-29",
+      "sent": 96,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-30",
+      "sent": 90,
+      "overCap": 0
+     },
+     {
+      "date": "2026-10-31",
+      "sent": 11,
+      "overCap": 0
+     },
+     {
+      "date": "2026-11-01",
+      "sent": 11,
+      "overCap": 0
+     }
+    ],
+    "total": 2287,
+    "avg": 76,
+    "peak": 140,
+    "daysOverCap": 0,
+    "dropped": 0,
+    "byRule": {
+     "New web lead - notify owner": 845,
+     "Hot lead - task in 1 day": 510,
+     "Junk lead - notify manager": 381,
+     "Closed won - tell the team": 360,
+     "Stage change - notify manager": 191
+    }
+   }
+  }
+ },
+ "proposedOff": [
+  "New web lead - notify owner (copy)",
+  "Lead changed - notify owner",
+  "Deal changed - notify owner",
+  "Value Proposition stage task",
+  "Test rule do not use",
+  "Trade show 2022 follow-up"
+ ],
+ "limits": {
+  "Standard": {
+   "customFieldsPerModule": 10,
+   "rulesPerModule": 30,
+   "activeRulesPerModule": 15,
+   "emailsPerLicense": 100,
+   "emailsPerDayMax": 5000,
+   "layoutsPerModule": null,
+   "pipelines": 5,
+   "validationRulesPerLayout": null,
+   "uniqueFieldsPerModule": 2,
+   "blueprints": null,
+   "apiBase": 5000,
+   "apiPerLicense": 250,
+   "apiMax": 100000
+  },
+  "Professional": {
+   "customFieldsPerModule": 155,
+   "rulesPerModule": 80,
+   "activeRulesPerModule": 40,
+   "emailsPerLicense": 200,
+   "emailsPerDayMax": 10000,
+   "layoutsPerModule": 1,
+   "pipelines": 10,
+   "validationRulesPerLayout": 5,
+   "uniqueFieldsPerModule": 2,
+   "blueprints": 3,
+   "apiBase": 10000,
+   "apiPerLicense": 500,
+   "apiMax": 500000
+  },
+  "Enterprise": {
+   "customFieldsPerModule": 300,
+   "rulesPerModule": 125,
+   "activeRulesPerModule": 75,
+   "emailsPerLicense": 500,
+   "emailsPerDayMax": 25000,
+   "layoutsPerModule": 3,
+   "pipelines": 20,
+   "validationRulesPerLayout": 10,
+   "uniqueFieldsPerModule": 2,
+   "blueprints": 50,
+   "apiBase": 15000,
+   "apiPerLicense": 1000,
+   "apiMax": 1000000
+  },
+  "Ultimate": {
+   "customFieldsPerModule": 500,
+   "rulesPerModule": 150,
+   "activeRulesPerModule": 100,
+   "emailsPerLicense": 1000,
+   "emailsPerDayMax": 50000,
+   "layoutsPerModule": 6,
+   "pipelines": 50,
+   "validationRulesPerLayout": 25,
+   "uniqueFieldsPerModule": 2,
+   "blueprints": 100,
+   "apiBase": 15000,
+   "apiPerLicense": 2000,
+   "apiMax": null
+  }
+ },
+ "register": {
+  "takenAt": "2026-11-02T12:00:00-05:00",
+  "edition": "Professional",
+  "limits": {
+   "customFieldsPerModule": 155,
+   "rulesPerModule": 80,
+   "activeRulesPerModule": 40,
+   "emailsPerLicense": 200,
+   "emailsPerDayMax": 10000,
+   "layoutsPerModule": 1,
+   "pipelines": 10,
+   "validationRulesPerLayout": 5,
+   "uniqueFieldsPerModule": 2,
+   "blueprints": 3,
+   "apiBase": 10000,
+   "apiPerLicense": 500,
+   "apiMax": 500000
+  },
+  "users": [
+   {
+    "name": "Ana Ruiz",
+    "role": "Sales Manager",
+    "profile": "Administrator",
+    "status": "active"
+   },
+   {
+    "name": "Ben Okafor",
+    "role": "Sales Rep",
+    "profile": "Standard",
+    "status": "active"
+   },
+   {
+    "name": "Chloe Martin",
+    "role": "Sales Rep",
+    "profile": "Standard",
+    "status": "active"
+   },
+   {
+    "name": "Dev Patel",
+    "role": "Sales Rep",
+    "profile": "Standard",
+    "status": "active"
+   },
+   {
+    "name": "Ella Novak",
+    "role": "Sales Rep",
+    "profile": "Standard",
+    "status": "active"
+   },
+   {
+    "name": "Farid Haddad",
+    "role": "Sales Rep",
+    "profile": "Standard",
+    "status": "inactive"
+   },
+   {
+    "name": "Grace Lim",
+    "role": "Sales Rep",
+    "profile": "Standard",
+    "status": "active"
+   }
+  ],
+  "modules": [
+   {
+    "module": "Contacts",
+    "records": 1442,
+    "fields": [
+     {
+      "label": "Contact Owner",
+      "api": "Owner",
+      "type": "ownerlookup",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Created Time",
+      "api": "Created_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Modified Time",
+      "api": "Modified_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Last Activity Time",
+      "api": "Last_Activity_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.8349514563106796
+     },
+     {
+      "label": "Description",
+      "api": "Description",
+      "type": "textarea",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "First Name",
+      "api": "First_Name",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Last Name",
+      "api": "Last_Name",
+      "type": "text",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Email",
+      "api": "Email",
+      "type": "email",
+      "custom": false,
+      "required": false,
+      "unique": true,
+      "options": 0,
+      "fill": 0.9965325936199723
+     },
+     {
+      "label": "Phone",
+      "api": "Phone",
+      "type": "phone",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.7219140083217753
+     },
+     {
+      "label": "Mobile",
+      "api": "Mobile",
+      "type": "phone",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.5104022191400832
+     },
+     {
+      "label": "Title",
+      "api": "Title",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "City",
+      "api": "Mailing_City",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "State",
+      "api": "Mailing_State",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "Lead Source",
+      "api": "Lead_Source",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 32,
+      "fill": 1
+     },
+     {
+      "label": "Account Name",
+      "api": "Account_Name",
+      "type": "lookup",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Region",
+      "api": "Region",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 5,
+      "fill": 0.8085991678224688
+     },
+     {
+      "label": "Birthday Card",
+      "api": "Birthday_Card",
+      "type": "boolean",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.009015256588072122
+     },
+     {
+      "label": "Old CRM ID",
+      "api": "Old_CRM_ID",
+      "type": "text",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.031206657420249653
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "records": 3134,
+    "fields": [
+     {
+      "label": "Lead Owner",
+      "api": "Owner",
+      "type": "ownerlookup",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Created Time",
+      "api": "Created_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Modified Time",
+      "api": "Modified_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Last Activity Time",
+      "api": "Last_Activity_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.8544990427568603
+     },
+     {
+      "label": "Description",
+      "api": "Description",
+      "type": "textarea",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "First Name",
+      "api": "First_Name",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Last Name",
+      "api": "Last_Name",
+      "type": "text",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Email",
+      "api": "Email",
+      "type": "email",
+      "custom": false,
+      "required": false,
+      "unique": true,
+      "options": 0,
+      "fill": 0.982769623484365
+     },
+     {
+      "label": "Phone",
+      "api": "Phone",
+      "type": "phone",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.7945118059987237
+     },
+     {
+      "label": "Mobile",
+      "api": "Mobile",
+      "type": "phone",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.34875558391831524
+     },
+     {
+      "label": "Title",
+      "api": "Title",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "City",
+      "api": "City",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "State",
+      "api": "State",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "Lead Source",
+      "api": "Lead_Source",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 32,
+      "fill": 1
+     },
+     {
+      "label": "Company",
+      "api": "Company",
+      "type": "text",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Website",
+      "api": "Website",
+      "type": "website",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.40331844288449265
+     },
+     {
+      "label": "Lead Status",
+      "api": "Lead_Status",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 8,
+      "fill": 1
+     },
+     {
+      "label": "Industry",
+      "api": "Industry",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 10,
+      "fill": 0.694639438417358
+     },
+     {
+      "label": "No. of Employees",
+      "api": "No_of_Employees",
+      "type": "integer",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.35003190810465856
+     },
+     {
+      "label": "Annual Revenue",
+      "api": "Annual_Revenue",
+      "type": "currency",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.14773452456924058
+     },
+     {
+      "label": "Rating",
+      "api": "Rating",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 3,
+      "fill": 0.4929802169751117
+     },
+     {
+      "label": "Product Interest",
+      "api": "Product_Interest",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 5,
+      "fill": 0.5928525845564774
+     },
+     {
+      "label": "Region",
+      "api": "Region",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 5,
+      "fill": 0.544033184428845
+     },
+     {
+      "label": "Budget Range",
+      "api": "Budget_Range",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 4,
+      "fill": 0.30025526483726867
+     },
+     {
+      "label": "Source Detail",
+      "api": "Source_Detail",
+      "type": "text",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.26196553924696875
+     },
+     {
+      "label": "Referral Partner",
+      "api": "Referral_Partner",
+      "type": "text",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.05647734524569241
+     },
+     {
+      "label": "Preferred Contact",
+      "api": "Preferred_Contact",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 3,
+      "fill": 0.03158902361199745
+     },
+     {
+      "label": "Old CRM ID",
+      "api": "Old_CRM_ID",
+      "type": "text",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.022016592214422464
+     },
+     {
+      "label": "Fax (alt)",
+      "api": "Fax_Alt",
+      "type": "phone",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.003190810465858328
+     },
+     {
+      "label": "Trade Show 2022",
+      "api": "Trade_Show_2022",
+      "type": "boolean",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.014358647096362476
+     },
+     {
+      "label": "Temp Import Batch",
+      "api": "Temp_Import_Batch",
+      "type": "text",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "Second Email (old)",
+      "api": "Second_Email_Old",
+      "type": "email",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.008296107211231652
+     }
+    ]
+   },
+   {
+    "module": "Deals",
+    "records": 680,
+    "fields": [
+     {
+      "label": "Deal Owner",
+      "api": "Owner",
+      "type": "ownerlookup",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Created Time",
+      "api": "Created_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Modified Time",
+      "api": "Modified_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Last Activity Time",
+      "api": "Last_Activity_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.8426470588235294
+     },
+     {
+      "label": "Deal Name",
+      "api": "Deal_Name",
+      "type": "text",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Account Name",
+      "api": "Account_Name",
+      "type": "lookup",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Contact Name",
+      "api": "Contact_Name",
+      "type": "lookup",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.8691176470588236
+     },
+     {
+      "label": "Stage",
+      "api": "Stage",
+      "type": "picklist",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 8,
+      "fill": 1
+     },
+     {
+      "label": "Amount",
+      "api": "Amount",
+      "type": "currency",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.8073529411764706
+     },
+     {
+      "label": "Closing Date",
+      "api": "Closing_Date",
+      "type": "date",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Probability (%)",
+      "api": "Probability",
+      "type": "integer",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.975
+     },
+     {
+      "label": "Pipeline",
+      "api": "Pipeline",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 1,
+      "fill": 1
+     },
+     {
+      "label": "Lead Source",
+      "api": "Lead_Source",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 32,
+      "fill": 1
+     },
+     {
+      "label": "Product Line",
+      "api": "Product_Line",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 5,
+      "fill": 0.6852941176470588
+     },
+     {
+      "label": "Loss Reason",
+      "api": "Loss_Reason",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 5,
+      "fill": 0.07794117647058824
+     }
+    ]
+   },
+   {
+    "module": "Accounts",
+    "records": 520,
+    "fields": [
+     {
+      "label": "Account Owner",
+      "api": "Owner",
+      "type": "ownerlookup",
+      "custom": false,
+      "required": true,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Created Time",
+      "api": "Created_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Modified Time",
+      "api": "Modified_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Last Activity Time",
+      "api": "Last_Activity_Time",
+      "type": "datetime",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.8615384615384616
+     },
+     {
+      "label": "Description",
+      "api": "Description",
+      "type": "textarea",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "Account Name",
+      "api": "Account_Name",
+      "type": "text",
+      "custom": false,
+      "required": true,
+      "unique": true,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Phone",
+      "api": "Phone",
+      "type": "phone",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Website",
+      "api": "Website",
+      "type": "website",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 1
+     },
+     {
+      "label": "Industry",
+      "api": "Industry",
+      "type": "picklist",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 10,
+      "fill": 1
+     },
+     {
+      "label": "Billing City",
+      "api": "Billing_City",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "Billing State",
+      "api": "Billing_State",
+      "type": "text",
+      "custom": false,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0
+     },
+     {
+      "label": "Contract Renewal",
+      "api": "Contract_Renewal",
+      "type": "date",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 0,
+      "fill": 0.275
+     },
+     {
+      "label": "Region",
+      "api": "Region",
+      "type": "picklist",
+      "custom": true,
+      "required": false,
+      "unique": false,
+      "options": 5,
+      "fill": 0.8115384615384615
+     }
+    ]
+   }
+  ],
+  "pipeline": [
+   {
+    "name": "Standard (Standard)",
+    "stages": [
+     {
+      "stage": "Qualification",
+      "type": "Open",
+      "category": "Pipeline"
+     },
+     {
+      "stage": "Needs Analysis",
+      "type": "Open",
+      "category": "Pipeline"
+     },
+     {
+      "stage": "Proposal/Price Quote",
+      "type": "Open",
+      "category": "Pipeline"
+     },
+     {
+      "stage": "Negotiation/Review",
+      "type": "Open",
+      "category": "Pipeline"
+     },
+     {
+      "stage": "Closed Won",
+      "type": "Closed Won",
+      "category": "Closed"
+     },
+     {
+      "stage": "Closed Lost",
+      "type": "Closed Lost",
+      "category": "Omitted"
+     }
+    ]
+   }
+  ],
+  "rules": [
+   {
+    "name": "New web lead - notify owner",
+    "module": "Leads",
+    "active": true,
+    "trigger": "create",
+    "criteria": "Lead_Source in Website, Web Form, web form, Web Site",
+    "actions": [
+     "email notifications: New web lead"
+    ],
+    "lastRun": "2026-11-01T21:04:43-05:00"
+   },
+   {
+    "name": "New web lead - notify owner (copy)",
+    "module": "Leads",
+    "active": true,
+    "trigger": "create",
+    "criteria": "Lead_Source in Website, Web Form, web form, Web Site",
+    "actions": [
+     "email notifications: New web lead"
+    ],
+    "lastRun": "2026-11-02T07:35:04-05:00"
+   },
+   {
+    "name": "Lead changed - notify owner",
+    "module": "Leads",
+    "active": true,
+    "trigger": "create_or_edit, every time",
+    "criteria": "all records",
+    "actions": [
+     "email notifications: Lead updated"
+    ],
+    "lastRun": "2026-11-02T01:41:45-05:00"
+   },
+   {
+    "name": "Hot lead - task in 1 day",
+    "module": "Leads",
+    "active": true,
+    "trigger": "create",
+    "criteria": "Rating equal Hot",
+    "actions": [
+     "tasks: Call hot lead",
+     "email notifications: Hot lead"
+    ],
+    "lastRun": "2026-10-31T13:00:35-05:00"
+   },
+   {
+    "name": "Contacted - schedule follow-up",
+    "module": "Leads",
+    "active": true,
+    "trigger": "field_update (Lead_Status)",
+    "criteria": "Lead_Status equal Contacted",
+    "actions": [
+     "tasks: Follow up in 3 days"
+    ],
+    "lastRun": "2026-11-02T09:18:31-05:00"
+   },
+   {
+    "name": "Junk lead - notify manager",
+    "module": "Leads",
+    "active": true,
+    "trigger": "field_update (Lead_Status)",
+    "criteria": "Lead_Status equal Junk Lead",
+    "actions": [
+     "email notifications: Junk lead"
+    ],
+    "lastRun": "2026-10-30T02:45:14-05:00"
+   },
+   {
+    "name": "Trade show 2022 follow-up",
+    "module": "Leads",
+    "active": false,
+    "trigger": "create",
+    "criteria": "Trade_Show_2022 equal true",
+    "actions": [
+     "tasks: Send booth follow-up"
+    ],
+    "lastRun": "2022-10-14T10:00:00-05:00"
+   },
+   {
+    "name": "Test rule do not use",
+    "module": "Leads",
+    "active": false,
+    "trigger": "create",
+    "criteria": "all records",
+    "actions": [
+     "field updates: Set rating"
+    ],
+    "lastRun": null
+   },
+   {
+    "name": "Push lead to old email tool",
+    "module": "Leads",
+    "active": true,
+    "trigger": "create",
+    "criteria": "all records",
+    "actions": [
+     "webhooks: POST to mail-sync (retired 2024)"
+    ],
+    "lastRun": "2026-11-01T21:12:44-05:00"
+   },
+   {
+    "name": "New contact - welcome task",
+    "module": "Contacts",
+    "active": true,
+    "trigger": "create",
+    "criteria": "all records",
+    "actions": [
+     "tasks: Welcome call"
+    ],
+    "lastRun": "2026-11-01T22:10:07-05:00"
+   },
+   {
+    "name": "Contact changed - notify owner",
+    "module": "Contacts",
+    "active": false,
+    "trigger": "create_or_edit, every time",
+    "criteria": "all records",
+    "actions": [
+     "email notifications: Contact updated"
+    ],
+    "lastRun": "2025-12-15T21:44:12-05:00"
+   },
+   {
+    "name": "Deal changed - notify owner",
+    "module": "Deals",
+    "active": true,
+    "trigger": "create_or_edit, every time",
+    "criteria": "all records",
+    "actions": [
+     "email notifications: Deal updated"
+    ],
+    "lastRun": "2026-11-02T07:37:13-05:00"
+   },
+   {
+    "name": "Stage change - notify manager",
+    "module": "Deals",
+    "active": true,
+    "trigger": "field_update (Stage)",
+    "criteria": "all records",
+    "actions": [
+     "email notifications: Stage changed"
+    ],
+    "lastRun": "2026-11-01T18:28:48-05:00"
+   },
+   {
+    "name": "Closed won - tell the team",
+    "module": "Deals",
+    "active": true,
+    "trigger": "field_update (Stage)",
+    "criteria": "Stage equal Closed Won",
+    "actions": [
+     "email notifications: Deal won"
+    ],
+    "lastRun": "2026-10-30T02:15:55-05:00"
+   },
+   {
+    "name": "Closed lost - ask for reason",
+    "module": "Deals",
+    "active": true,
+    "trigger": "field_update (Stage)",
+    "criteria": "Stage equal Closed Lost",
+    "actions": [
+     "tasks: Record loss reason"
+    ],
+    "lastRun": "2026-11-01T18:47:26-05:00"
+   },
+   {
+    "name": "Value Proposition stage task",
+    "module": "Deals",
+    "active": true,
+    "trigger": "field_update (Stage)",
+    "criteria": "Stage equal Value Proposition",
+    "actions": [
+     "tasks: Send value deck"
+    ],
+    "lastRun": "2023-03-02T09:00:00-05:00"
+   }
+  ]
+ },
+ "tests": [
+  "tests 17",
+  "pass 17",
+  "fail 0"
+ ]
+}

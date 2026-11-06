@@ -1,0 +1,4629 @@
+{
+ "takenAt": "2026-11-02T12:00:00-05:00",
+ "edition": "Professional",
+ "counts": {
+  "Accounts": 520,
+  "Deals": 680,
+  "Contacts": 1442,
+  "Leads": 3134
+ },
+ "findings": [
+  {
+   "id": "owners.inactive",
+   "area": "Leads & ownership",
+   "title": "Records owned by deactivated users",
+   "severity": "high",
+   "count": 461,
+   "unit": "records",
+   "detail": "Farid Haddad still owns 32 accounts, 43 deals, 78 contacts, 308 leads. Workflow alerts to \"record owner\" on these go nowhere useful.",
+   "examples": []
+  },
+  {
+   "id": "duplicates.Leads",
+   "area": "Data",
+   "title": "Duplicate leads",
+   "severity": "high",
+   "count": 190,
+   "unit": "extra records",
+   "detail": "175 groups, 190 records to merge away (6.1% of Leads). Matched on: email 106, company 18, phone 54.",
+   "examples": [
+    [
+     "6123456000000102193",
+     "6123456000000105010"
+    ],
+    [
+     "6123456000000102194",
+     "6123456000000105044"
+    ],
+    [
+     "6123456000000102207",
+     "6123456000000105038"
+    ],
+    [
+     "6123456000000102217",
+     "6123456000000105145"
+    ],
+    [
+     "6123456000000102220",
+     "6123456000000105022"
+    ]
+   ]
+  },
+  {
+   "id": "deals.overdue",
+   "area": "Pipeline",
+   "title": "Open deals past their closing date",
+   "severity": "high",
+   "count": 136,
+   "unit": "deals",
+   "detail": "136 of 375 open deals (36%), worth $3,938,800, still count in this quarter's forecast.",
+   "examples": []
+  },
+  {
+   "id": "duplicates.Contacts",
+   "area": "Data",
+   "title": "Duplicate contacts",
+   "severity": "high",
+   "count": 42,
+   "unit": "extra records",
+   "detail": "42 groups, 42 records to merge away (2.9% of Contacts). Matched on: email 28, phone 13, company 1.",
+   "examples": [
+    [
+     "6123456000000100812",
+     "6123456000000105341"
+    ],
+    [
+     "6123456000000100840",
+     "6123456000000105358"
+    ],
+    [
+     "6123456000000100841",
+     "6123456000000105366"
+    ],
+    [
+     "6123456000000100880",
+     "6123456000000105351"
+    ],
+    [
+     "6123456000000100936",
+     "6123456000000105346"
+    ]
+   ]
+  },
+  {
+   "id": "picklists.leadSource",
+   "area": "Reports",
+   "title": "Lead Source split across spelling variants",
+   "severity": "high",
+   "count": 12,
+   "unit": "variant values",
+   "detail": "25 values in use for what are about 13 sources, plus 7 options nobody uses. A \"leads by source\" report shows \"LinkedIn\", \"Linkedin\" and \"Linked In\" as three bars.",
+   "examples": [
+    {
+     "canonical": "Website",
+     "members": [
+      "Website (645)",
+      "Web Site (61)"
+     ]
+    },
+    {
+     "canonical": "Web Form",
+     "members": [
+      "Web Form (369)",
+      "web form (115)"
+     ]
+    },
+    {
+     "canonical": "Google Ads",
+     "members": [
+      "Google Ads (322)",
+      "google ads (45)"
+     ]
+    },
+    {
+     "canonical": "LinkedIn",
+     "members": [
+      "LinkedIn (174)",
+      "Linkedin (100)",
+      "Linked In (30)"
+     ]
+    },
+    {
+     "canonical": "Referral",
+     "members": [
+      "Referral (174)",
+      "Referal (53)",
+      "Referrals (25)"
+     ]
+    },
+    {
+     "canonical": "Trade Show",
+     "members": [
+      "Trade Show (96)",
+      "Tradeshow (64)",
+      "Trade Show 2023 (63)",
+      "Trade show (31)"
+     ]
+    },
+    {
+     "canonical": "Email Campaign",
+     "members": [
+      "Email Campaign (105)",
+      "Email campaign (26)",
+      "E-mail Campaign (25)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "workflows.noisy",
+   "area": "Automation",
+   "title": "Rules that email on every single edit",
+   "severity": "high",
+   "count": 2,
+   "unit": "rules",
+   "detail": "\"Lead changed - notify owner\" (Leads), \"Deal changed - notify owner\" (Deals): no criteria, repeat on. These use up the daily e-mail allowance and teach people to ignore CRM mail.",
+   "examples": []
+  },
+  {
+   "id": "workflows.duplicate",
+   "area": "Automation",
+   "title": "Active workflow rules that do the same thing twice",
+   "severity": "high",
+   "count": 1,
+   "unit": "rules",
+   "detail": "\"New web lead - notify owner\" = \"New web lead - notify owner (copy)\". Each matching record sends every alert twice.",
+   "examples": []
+  },
+  {
+   "id": "data.phoneFormats",
+   "area": "Data",
+   "title": "Phone numbers in mixed formats",
+   "severity": "medium",
+   "count": 5880,
+   "unit": "numbers",
+   "detail": "6 different formats across 5,880 numbers; 0 are in international (+1...) form. Mixed formats are why phone-based duplicate checks and click-to-call miss.",
+   "examples": [
+    "(999) 999-9999",
+    "9999999999",
+    "999-999-9999",
+    "+9 999 999 9999",
+    "999.999.9999",
+    "9-999-999-9999"
+   ]
+  },
+  {
+   "id": "leads.stale",
+   "area": "Leads & ownership",
+   "title": "Open leads with no activity in 90+ days",
+   "severity": "medium",
+   "count": 1965,
+   "unit": "leads",
+   "detail": "63% of all leads sit in an open status untouched. 161 were never contacted at all after two weeks.",
+   "examples": []
+  },
+  {
+   "id": "deals.idle",
+   "area": "Pipeline",
+   "title": "Open deals with no activity in 30+ days",
+   "severity": "medium",
+   "count": 339,
+   "unit": "deals",
+   "detail": "90% of open deals.",
+   "examples": []
+  },
+  {
+   "id": "duplicates.leadIsContact",
+   "area": "Data",
+   "title": "Leads that are already contacts",
+   "severity": "medium",
+   "count": 108,
+   "unit": "leads",
+   "detail": "Zoho merges only within a module, so these need converting into the existing contact (or deleting) rather than merging.",
+   "examples": [
+    {
+     "lead": "6123456000000105217",
+     "contact": "6123456000000101849",
+     "reason": "email"
+    },
+    {
+     "lead": "6123456000000105218",
+     "contact": "6123456000000101020",
+     "reason": "email"
+    },
+    {
+     "lead": "6123456000000105220",
+     "contact": "6123456000000100936",
+     "reason": "email"
+    },
+    {
+     "lead": "6123456000000105221",
+     "contact": "6123456000000100859",
+     "reason": "email"
+    },
+    {
+     "lead": "6123456000000105222",
+     "contact": "6123456000000100808",
+     "reason": "email"
+    }
+   ]
+  },
+  {
+   "id": "deals.legacyStage",
+   "area": "Pipeline",
+   "title": "Deals in stages that are no longer in the pipeline",
+   "severity": "medium",
+   "count": 17,
+   "unit": "deals",
+   "detail": "Id. Decision Makers, Value Proposition: they drop out of pipeline-by-stage reports.",
+   "examples": []
+  },
+  {
+   "id": "deals.noAmount",
+   "area": "Pipeline",
+   "title": "Deals at proposal stage or later with no amount",
+   "severity": "medium",
+   "count": 9,
+   "unit": "deals",
+   "detail": "Pipeline value and forecast reports under-count these.",
+   "examples": []
+  },
+  {
+   "id": "fields.sparse",
+   "area": "Configuration",
+   "title": "Custom fields filled on under 2% of records",
+   "severity": "medium",
+   "count": 5,
+   "unit": "fields",
+   "detail": "Candidates to retire after exporting their values; they clutter layouts and count against the edition's custom-field limit.",
+   "examples": [
+    "Contacts.Birthday Card: 13 filled",
+    "Leads.Fax (alt): 10 filled",
+    "Leads.Trade Show 2022: 45 filled",
+    "Leads.Temp Import Batch: 0 filled",
+    "Leads.Second Email (old): 26 filled"
+   ]
+  },
+  {
+   "id": "workflows.ghost",
+   "area": "Automation",
+   "title": "Active rules waiting for a stage that no longer exists",
+   "severity": "medium",
+   "count": 1,
+   "unit": "rules",
+   "detail": "\"Value Proposition stage task\"",
+   "examples": []
+  },
+  {
+   "id": "workflows.webhooks",
+   "area": "Automation",
+   "title": "Active webhooks to check",
+   "severity": "medium",
+   "count": 1,
+   "unit": "rules",
+   "detail": "\"Push lead to old email tool\": POST to mail-sync (retired 2024)",
+   "examples": []
+  },
+  {
+   "id": "deals.lossReason",
+   "area": "Pipeline",
+   "title": "Lost deals without a loss reason",
+   "severity": "low",
+   "count": 88,
+   "unit": "deals",
+   "detail": "62% of lost deals; \"why we lose\" reports are mostly blank.",
+   "examples": []
+  },
+  {
+   "id": "data.emails",
+   "area": "Data",
+   "title": "Emails with capitals or stray spaces",
+   "severity": "low",
+   "count": 47,
+   "unit": "emails",
+   "detail": "47 need trimming/lower-casing, 0 are not valid addresses.",
+   "examples": []
+  },
+  {
+   "id": "data.roleEmails",
+   "area": "Data",
+   "title": "Different people sharing info@ / sales@ addresses",
+   "severity": "low",
+   "count": 24,
+   "unit": "leads",
+   "detail": "Not merged: a shared role address is not the same person. Worth asking for a direct address.",
+   "examples": [
+    {
+     "email": "info@pioneersidedental.example",
+     "ids": [
+      "6123456000000104980",
+      "6123456000000104981"
+     ]
+    },
+    {
+     "email": "info@summitbrookfoods.example",
+     "ids": [
+      "6123456000000104982",
+      "6123456000000104983"
+     ]
+    },
+    {
+     "email": "info@cedarviewengineering.example",
+     "ids": [
+      "6123456000000104984",
+      "6123456000000104985"
+     ]
+    },
+    {
+     "email": "info@coppersidedental.example",
+     "ids": [
+      "6123456000000104986",
+      "6123456000000104987"
+     ]
+    },
+    {
+     "email": "info@pioneerviewdental.example",
+     "ids": [
+      "6123456000000104988",
+      "6123456000000104989"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "picklists.unused",
+   "area": "Configuration",
+   "title": "Picklist options nobody uses",
+   "severity": "low",
+   "count": 21,
+   "unit": "options",
+   "detail": "Contacts.Lead_Source: 7, Leads.Lead_Source: 7, Deals.Lead_Source: 7",
+   "examples": []
+  },
+  {
+   "id": "workflows.dead",
+   "area": "Automation",
+   "title": "Rules that are off, never ran, or not run in a year",
+   "severity": "low",
+   "count": 4,
+   "unit": "rules",
+   "detail": "\"Trade show 2022 follow-up\", \"Test rule do not use\", \"Contact changed - notify owner\", \"Value Proposition stage task\"",
+   "examples": []
+  },
+  {
+   "id": "limits.customFields",
+   "area": "Configuration",
+   "title": "Custom fields vs the Professional limit (155/module)",
+   "severity": "info",
+   "count": 11,
+   "unit": "in the fullest module",
+   "detail": "Contacts 3, Leads 11, Deals 2, Accounts 2",
+   "examples": []
+  },
+  {
+   "id": "limits.activeRules",
+   "area": "Automation",
+   "title": "Active rules vs the Professional limit (40/module)",
+   "severity": "info",
+   "count": 7,
+   "unit": "in the busiest module",
+   "detail": "Leads 7, Contacts 1, Deals 5",
+   "examples": []
+  }
+ ],
+ "data": {
+  "duplicates": {
+   "Leads": [
+    {
+     "ids": [
+      "6123456000000102193",
+      "6123456000000105010"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102194",
+      "6123456000000105044"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102207",
+      "6123456000000105038"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102217",
+      "6123456000000105145"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102220",
+      "6123456000000105022"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102225",
+      "6123456000000105029"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102226",
+      "6123456000000105043"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102231",
+      "6123456000000105056"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102239",
+      "6123456000000105051"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102251",
+      "6123456000000105046",
+      "6123456000000105047"
+     ],
+     "reasons": [
+      "email",
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102253",
+      "6123456000000105136"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102254",
+      "6123456000000105089"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102256",
+      "6123456000000105008",
+      "6123456000000105009"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102266",
+      "6123456000000105058"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102277",
+      "6123456000000105072"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102278",
+      "6123456000000105040"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102285",
+      "6123456000000105042"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102286",
+      "6123456000000105013",
+      "6123456000000105014"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102287",
+      "6123456000000105023"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102292",
+      "6123456000000105037"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102308",
+      "6123456000000105021"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102310",
+      "6123456000000105049"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102314",
+      "6123456000000105050"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102318",
+      "6123456000000105053"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102329",
+      "6123456000000105039"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102333",
+      "6123456000000105007"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102334",
+      "6123456000000105067"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102343",
+      "6123456000000105198"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102346",
+      "6123456000000105035"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102347",
+      "6123456000000105085"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102356",
+      "6123456000000105032"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102360",
+      "6123456000000105054"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102361",
+      "6123456000000105025"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102362",
+      "6123456000000105019"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102363",
+      "6123456000000105060"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102372",
+      "6123456000000105045"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102377",
+      "6123456000000105073"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102378",
+      "6123456000000105026"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102379",
+      "6123456000000105077"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102383",
+      "6123456000000105033"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102392",
+      "6123456000000105078"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102395",
+      "6123456000000105027"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102396",
+      "6123456000000105169"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102397",
+      "6123456000000105120",
+      "6123456000000105121"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102401",
+      "6123456000000105052"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102402",
+      "6123456000000105055"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102405",
+      "6123456000000105191"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102423",
+      "6123456000000105011",
+      "6123456000000105012"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102438",
+      "6123456000000105082"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102442",
+      "6123456000000105016"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102444",
+      "6123456000000105156"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102460",
+      "6123456000000105034"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102472",
+      "6123456000000105036"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102475",
+      "6123456000000105059"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102476",
+      "6123456000000105024"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102478",
+      "6123456000000105154"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102481",
+      "6123456000000105096"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102482",
+      "6123456000000105017",
+      "6123456000000105018"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102485",
+      "6123456000000105193"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102488",
+      "6123456000000105070"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102497",
+      "6123456000000105175"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102498",
+      "6123456000000105028"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102499",
+      "6123456000000105020"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102510",
+      "6123456000000105041"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102528",
+      "6123456000000105048"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102530",
+      "6123456000000105015"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102531",
+      "6123456000000105030",
+      "6123456000000105031"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102532",
+      "6123456000000105062"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102536",
+      "6123456000000105075"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102538",
+      "6123456000000105057"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102541",
+      "6123456000000105160"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102542",
+      "6123456000000105081"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102551",
+      "6123456000000105074"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102553",
+      "6123456000000105088"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102556",
+      "6123456000000105104"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102557",
+      "6123456000000105083"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102559",
+      "6123456000000105006"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102565",
+      "6123456000000105133"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102572",
+      "6123456000000105095"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102604",
+      "6123456000000105192"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102626",
+      "6123456000000105084"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102638",
+      "6123456000000105131"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102639",
+      "6123456000000105093"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102646",
+      "6123456000000105061"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102654",
+      "6123456000000105094"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102655",
+      "6123456000000105119"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102661",
+      "6123456000000105071"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102665",
+      "6123456000000105109"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102666",
+      "6123456000000105161"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102668",
+      "6123456000000105079"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102759",
+      "6123456000000105174"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102763",
+      "6123456000000105125",
+      "6123456000000105126"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102767",
+      "6123456000000105115"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102779",
+      "6123456000000105063"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102796",
+      "6123456000000105066"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102797",
+      "6123456000000105113"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102805",
+      "6123456000000105087"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102825",
+      "6123456000000105080"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102840",
+      "6123456000000105114"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102855",
+      "6123456000000105064",
+      "6123456000000105065"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102856",
+      "6123456000000105069"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102871",
+      "6123456000000105068"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102877",
+      "6123456000000105076"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102887",
+      "6123456000000105110"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102895",
+      "6123456000000105152"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102972",
+      "6123456000000105163",
+      "6123456000000105164"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102989",
+      "6123456000000105166"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103082",
+      "6123456000000105148"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103144",
+      "6123456000000105194"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103163",
+      "6123456000000105141"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103170",
+      "6123456000000105005"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103177",
+      "6123456000000105138"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103268",
+      "6123456000000105151"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103269",
+      "6123456000000105146"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103327",
+      "6123456000000105159"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103377",
+      "6123456000000105195"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103379",
+      "6123456000000105176"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103404",
+      "6123456000000105162"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103538",
+      "6123456000000105196"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103554",
+      "6123456000000105197"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103614",
+      "6123456000000105158"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103646",
+      "6123456000000105123"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103660",
+      "6123456000000105122"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103670",
+      "6123456000000105142"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103680",
+      "6123456000000105144"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103681",
+      "6123456000000105118"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103687",
+      "6123456000000105097",
+      "6123456000000105098"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103690",
+      "6123456000000105153"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103696",
+      "6123456000000105150"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103823",
+      "6123456000000105086"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103838",
+      "6123456000000105137"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103863",
+      "6123456000000105165"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103871",
+      "6123456000000105130"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103872",
+      "6123456000000105172"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103894",
+      "6123456000000105101"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103906",
+      "6123456000000105157"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103907",
+      "6123456000000105099",
+      "6123456000000105100"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103908",
+      "6123456000000105173"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103909",
+      "6123456000000105091"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103914",
+      "6123456000000105105",
+      "6123456000000105106"
+     ],
+     "reasons": [
+      "email",
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103917",
+      "6123456000000105107"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103932",
+      "6123456000000105170",
+      "6123456000000105171"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103938",
+      "6123456000000105140"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103961",
+      "6123456000000105149"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103973",
+      "6123456000000105111"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103987",
+      "6123456000000105124"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103995",
+      "6123456000000105155"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000103996",
+      "6123456000000105127",
+      "6123456000000105128"
+     ],
+     "reasons": [
+      "email",
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104004",
+      "6123456000000105129"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104019",
+      "6123456000000105134"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104021",
+      "6123456000000105147"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104039",
+      "6123456000000105112"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104058",
+      "6123456000000105168"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104061",
+      "6123456000000105132"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104067",
+      "6123456000000105108"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104073",
+      "6123456000000105103"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104079",
+      "6123456000000105135"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104185",
+      "6123456000000105117"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104198",
+      "6123456000000105092"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104226",
+      "6123456000000105102"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104269",
+      "6123456000000105090"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104273",
+      "6123456000000105167"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104284",
+      "6123456000000105143"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104296",
+      "6123456000000105139"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104322",
+      "6123456000000105116"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000104815",
+      "6123456000000105004"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105199",
+      "6123456000000105200"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105201",
+      "6123456000000105202"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105203",
+      "6123456000000105204"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105205",
+      "6123456000000105206"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105207",
+      "6123456000000105208"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105209",
+      "6123456000000105210"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105211",
+      "6123456000000105212"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105213",
+      "6123456000000105214"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000105215",
+      "6123456000000105216"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    }
+   ],
+   "Contacts": [
+    {
+     "ids": [
+      "6123456000000100812",
+      "6123456000000105341"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000100840",
+      "6123456000000105358"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000100841",
+      "6123456000000105366"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000100880",
+      "6123456000000105351"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000100936",
+      "6123456000000105346"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000100942",
+      "6123456000000105331"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101037",
+      "6123456000000105368"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101061",
+      "6123456000000105349"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101063",
+      "6123456000000105332"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101067",
+      "6123456000000105352"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101084",
+      "6123456000000105365"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101097",
+      "6123456000000105343"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101105",
+      "6123456000000105333"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101332",
+      "6123456000000105357"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101336",
+      "6123456000000105334"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101355",
+      "6123456000000105330"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101404",
+      "6123456000000105364"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101433",
+      "6123456000000105355"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101456",
+      "6123456000000105363"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101475",
+      "6123456000000105361"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101573",
+      "6123456000000105350"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101594",
+      "6123456000000105335"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101622",
+      "6123456000000105348"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101629",
+      "6123456000000105340"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101647",
+      "6123456000000105337"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101666",
+      "6123456000000105344"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101723",
+      "6123456000000105356"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101735",
+      "6123456000000105347"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101802",
+      "6123456000000105362"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101813",
+      "6123456000000105354"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101887",
+      "6123456000000105338"
+     ],
+     "reasons": [
+      "company"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101910",
+      "6123456000000105345"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101915",
+      "6123456000000105359"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101930",
+      "6123456000000105339"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101967",
+      "6123456000000105353"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000101993",
+      "6123456000000105329"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102011",
+      "6123456000000105360"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102078",
+      "6123456000000105342"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102135",
+      "6123456000000105327"
+     ],
+     "reasons": [
+      "phone"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102153",
+      "6123456000000105336"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102154",
+      "6123456000000105367"
+     ],
+     "reasons": [
+      "email"
+     ]
+    },
+    {
+     "ids": [
+      "6123456000000102163",
+      "6123456000000105328"
+     ],
+     "reasons": [
+      "email"
+     ]
+    }
+   ]
+  },
+  "cross": [
+   {
+    "lead": "6123456000000105217",
+    "contact": "6123456000000101849",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105218",
+    "contact": "6123456000000101020",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105220",
+    "contact": "6123456000000100936",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105221",
+    "contact": "6123456000000100859",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105222",
+    "contact": "6123456000000100808",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105223",
+    "contact": "6123456000000101105",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105224",
+    "contact": "6123456000000100954",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105225",
+    "contact": "6123456000000101013",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105226",
+    "contact": "6123456000000100843",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105227",
+    "contact": "6123456000000101037",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105228",
+    "contact": "6123456000000101800",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105229",
+    "contact": "6123456000000100856",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105230",
+    "contact": "6123456000000100931",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105231",
+    "contact": "6123456000000105362",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105232",
+    "contact": "6123456000000101072",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105233",
+    "contact": "6123456000000101810",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105234",
+    "contact": "6123456000000100892",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105235",
+    "contact": "6123456000000101098",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105236",
+    "contact": "6123456000000101089",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105237",
+    "contact": "6123456000000100858",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105238",
+    "contact": "6123456000000101687",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105239",
+    "contact": "6123456000000101788",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105240",
+    "contact": "6123456000000100895",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105241",
+    "contact": "6123456000000101729",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105242",
+    "contact": "6123456000000101033",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105243",
+    "contact": "6123456000000100793",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105244",
+    "contact": "6123456000000100816",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105245",
+    "contact": "6123456000000101087",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105246",
+    "contact": "6123456000000100813",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105247",
+    "contact": "6123456000000101090",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105248",
+    "contact": "6123456000000101172",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105249",
+    "contact": "6123456000000101797",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105250",
+    "contact": "6123456000000100814",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105251",
+    "contact": "6123456000000101727",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105252",
+    "contact": "6123456000000101503",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105253",
+    "contact": "6123456000000101785",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105254",
+    "contact": "6123456000000105337",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105255",
+    "contact": "6123456000000100955",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105256",
+    "contact": "6123456000000101453",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105257",
+    "contact": "6123456000000105354",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105258",
+    "contact": "6123456000000100975",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105259",
+    "contact": "6123456000000101446",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105260",
+    "contact": "6123456000000101409",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105261",
+    "contact": "6123456000000101569",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105262",
+    "contact": "6123456000000100937",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105263",
+    "contact": "6123456000000101624",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105264",
+    "contact": "6123456000000100879",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105265",
+    "contact": "6123456000000101741",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105266",
+    "contact": "6123456000000101425",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105267",
+    "contact": "6123456000000101092",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105268",
+    "contact": "6123456000000100815",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105269",
+    "contact": "6123456000000101821",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105270",
+    "contact": "6123456000000100963",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105271",
+    "contact": "6123456000000101524",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105272",
+    "contact": "6123456000000101348",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105273",
+    "contact": "6123456000000101790",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105274",
+    "contact": "6123456000000100896",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105275",
+    "contact": "6123456000000101287",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105276",
+    "contact": "6123456000000101736",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105277",
+    "contact": "6123456000000100853",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105278",
+    "contact": "6123456000000100926",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105279",
+    "contact": "6123456000000101695",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105280",
+    "contact": "6123456000000102100",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105281",
+    "contact": "6123456000000100823",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105282",
+    "contact": "6123456000000101441",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105283",
+    "contact": "6123456000000101765",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105284",
+    "contact": "6123456000000101941",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105285",
+    "contact": "6123456000000101778",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105286",
+    "contact": "6123456000000101431",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105287",
+    "contact": "6123456000000100919",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105288",
+    "contact": "6123456000000101351",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105289",
+    "contact": "6123456000000101161",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105290",
+    "contact": "6123456000000100891",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105291",
+    "contact": "6123456000000101854",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105292",
+    "contact": "6123456000000100865",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105293",
+    "contact": "6123456000000101889",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105294",
+    "contact": "6123456000000100910",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105295",
+    "contact": "6123456000000101710",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105296",
+    "contact": "6123456000000101148",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105297",
+    "contact": "6123456000000101452",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105298",
+    "contact": "6123456000000101625",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105299",
+    "contact": "6123456000000101880",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105300",
+    "contact": "6123456000000101896",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105301",
+    "contact": "6123456000000101764",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105302",
+    "contact": "6123456000000101048",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105303",
+    "contact": "6123456000000101935",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105304",
+    "contact": "6123456000000101858",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105305",
+    "contact": "6123456000000101847",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105306",
+    "contact": "6123456000000101988",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105307",
+    "contact": "6123456000000101870",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105308",
+    "contact": "6123456000000100983",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105309",
+    "contact": "6123456000000101030",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105310",
+    "contact": "6123456000000101192",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105311",
+    "contact": "6123456000000101389",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105312",
+    "contact": "6123456000000101188",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105313",
+    "contact": "6123456000000101708",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105314",
+    "contact": "6123456000000101636",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105315",
+    "contact": "6123456000000101064",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105316",
+    "contact": "6123456000000101000",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105317",
+    "contact": "6123456000000100826",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105318",
+    "contact": "6123456000000101166",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105319",
+    "contact": "6123456000000101872",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105320",
+    "contact": "6123456000000101878",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105321",
+    "contact": "6123456000000101073",
+    "reason": "phone"
+   },
+   {
+    "lead": "6123456000000105322",
+    "contact": "6123456000000101182",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105323",
+    "contact": "6123456000000101726",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105324",
+    "contact": "6123456000000101591",
+    "reason": "email"
+   },
+   {
+    "lead": "6123456000000105325",
+    "contact": "6123456000000101429",
+    "reason": "email"
+   }
+  ],
+  "picklists": [
+   {
+    "module": "Contacts",
+    "field": "Lead_Source",
+    "label": "Lead Source",
+    "defined": 32,
+    "used": 25,
+    "unused": [
+     "Advertisement",
+     "Online Store",
+     "Public Relations",
+     "Sales Email Alias",
+     "Seminar Partner",
+     "Web Research",
+     "Internal Seminar"
+    ],
+    "offList": [],
+    "groups": [
+     {
+      "canonical": "Website",
+      "members": [
+       {
+        "value": "Website",
+        "count": 299,
+        "seq": 1
+       },
+       {
+        "value": "Web Site",
+        "count": 27,
+        "seq": 4
+       }
+      ]
+     },
+     {
+      "canonical": "Web Form",
+      "members": [
+       {
+        "value": "Web Form",
+        "count": 177,
+        "seq": 2
+       },
+       {
+        "value": "web form",
+        "count": 44,
+        "seq": 3
+       }
+      ]
+     },
+     {
+      "canonical": "Google Ads",
+      "members": [
+       {
+        "value": "Google Ads",
+        "count": 135,
+        "seq": 5
+       },
+       {
+        "value": "google ads",
+        "count": 30,
+        "seq": 7
+       }
+      ]
+     },
+     {
+      "canonical": "LinkedIn",
+      "members": [
+       {
+        "value": "LinkedIn",
+        "count": 96,
+        "seq": 8
+       },
+       {
+        "value": "Linkedin",
+        "count": 55,
+        "seq": 9
+       },
+       {
+        "value": "Linked In",
+        "count": 21,
+        "seq": 10
+       }
+      ]
+     },
+     {
+      "canonical": "Referral",
+      "members": [
+       {
+        "value": "Referral",
+        "count": 72,
+        "seq": 11
+       },
+       {
+        "value": "Referal",
+        "count": 25,
+        "seq": 12
+       },
+       {
+        "value": "Referrals",
+        "count": 11,
+        "seq": 13
+       }
+      ]
+     },
+     {
+      "canonical": "Trade Show",
+      "members": [
+       {
+        "value": "Trade Show",
+        "count": 57,
+        "seq": 14
+       },
+       {
+        "value": "Trade Show 2023",
+        "count": 25,
+        "seq": 17
+       },
+       {
+        "value": "Tradeshow",
+        "count": 22,
+        "seq": 15
+       },
+       {
+        "value": "Trade show",
+        "count": 11,
+        "seq": 16
+       }
+      ]
+     },
+     {
+      "canonical": "Email Campaign",
+      "members": [
+       {
+        "value": "Email Campaign",
+        "count": 50,
+        "seq": 18
+       },
+       {
+        "value": "E-mail Campaign",
+        "count": 14,
+        "seq": 19
+       },
+       {
+        "value": "Email campaign",
+        "count": 11,
+        "seq": 20
+       }
+      ]
+     }
+    ],
+    "values": [
+     {
+      "value": "Website",
+      "count": 299,
+      "seq": 1
+     },
+     {
+      "value": "Web Form",
+      "count": 177,
+      "seq": 2
+     },
+     {
+      "value": "web form",
+      "count": 44,
+      "seq": 3
+     },
+     {
+      "value": "Web Site",
+      "count": 27,
+      "seq": 4
+     },
+     {
+      "value": "Google Ads",
+      "count": 135,
+      "seq": 5
+     },
+     {
+      "value": "Google Adwords",
+      "count": 79,
+      "seq": 6
+     },
+     {
+      "value": "google ads",
+      "count": 30,
+      "seq": 7
+     },
+     {
+      "value": "LinkedIn",
+      "count": 96,
+      "seq": 8
+     },
+     {
+      "value": "Linkedin",
+      "count": 55,
+      "seq": 9
+     },
+     {
+      "value": "Linked In",
+      "count": 21,
+      "seq": 10
+     },
+     {
+      "value": "Referral",
+      "count": 72,
+      "seq": 11
+     },
+     {
+      "value": "Referal",
+      "count": 25,
+      "seq": 12
+     },
+     {
+      "value": "Referrals",
+      "count": 11,
+      "seq": 13
+     },
+     {
+      "value": "Trade Show",
+      "count": 57,
+      "seq": 14
+     },
+     {
+      "value": "Tradeshow",
+      "count": 22,
+      "seq": 15
+     },
+     {
+      "value": "Trade show",
+      "count": 11,
+      "seq": 16
+     },
+     {
+      "value": "Trade Show 2023",
+      "count": 25,
+      "seq": 17
+     },
+     {
+      "value": "Email Campaign",
+      "count": 50,
+      "seq": 18
+     },
+     {
+      "value": "E-mail Campaign",
+      "count": 14,
+      "seq": 19
+     },
+     {
+      "value": "Email campaign",
+      "count": 11,
+      "seq": 20
+     },
+     {
+      "value": "Cold Call",
+      "count": 79,
+      "seq": 21
+     },
+     {
+      "value": "Partner",
+      "count": 53,
+      "seq": 22
+     },
+     {
+      "value": "Chat",
+      "count": 28,
+      "seq": 23
+     },
+     {
+      "value": "Employee Referral",
+      "count": 10,
+      "seq": 24
+     },
+     {
+      "value": "External Referral",
+      "count": 11,
+      "seq": 25
+     },
+     {
+      "value": "Advertisement",
+      "count": 0,
+      "seq": 26
+     },
+     {
+      "value": "Online Store",
+      "count": 0,
+      "seq": 27
+     },
+     {
+      "value": "Public Relations",
+      "count": 0,
+      "seq": 28
+     },
+     {
+      "value": "Sales Email Alias",
+      "count": 0,
+      "seq": 29
+     },
+     {
+      "value": "Seminar Partner",
+      "count": 0,
+      "seq": 30
+     },
+     {
+      "value": "Web Research",
+      "count": 0,
+      "seq": 31
+     },
+     {
+      "value": "Internal Seminar",
+      "count": 0,
+      "seq": 32
+     }
+    ]
+   },
+   {
+    "module": "Contacts",
+    "field": "Region",
+    "label": "Region",
+    "defined": 5,
+    "used": 5,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Northeast",
+      "count": 219,
+      "seq": 1
+     },
+     {
+      "value": "Southeast",
+      "count": 186,
+      "seq": 2
+     },
+     {
+      "value": "Midwest",
+      "count": 289,
+      "seq": 3
+     },
+     {
+      "value": "Southwest",
+      "count": 234,
+      "seq": 4
+     },
+     {
+      "value": "West",
+      "count": 238,
+      "seq": 5
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Lead_Source",
+    "label": "Lead Source",
+    "defined": 32,
+    "used": 25,
+    "unused": [
+     "Advertisement",
+     "Online Store",
+     "Public Relations",
+     "Sales Email Alias",
+     "Seminar Partner",
+     "Web Research",
+     "Internal Seminar"
+    ],
+    "offList": [],
+    "groups": [
+     {
+      "canonical": "Website",
+      "members": [
+       {
+        "value": "Website",
+        "count": 645,
+        "seq": 1
+       },
+       {
+        "value": "Web Site",
+        "count": 61,
+        "seq": 4
+       }
+      ]
+     },
+     {
+      "canonical": "Web Form",
+      "members": [
+       {
+        "value": "Web Form",
+        "count": 369,
+        "seq": 2
+       },
+       {
+        "value": "web form",
+        "count": 115,
+        "seq": 3
+       }
+      ]
+     },
+     {
+      "canonical": "Google Ads",
+      "members": [
+       {
+        "value": "Google Ads",
+        "count": 322,
+        "seq": 5
+       },
+       {
+        "value": "google ads",
+        "count": 45,
+        "seq": 7
+       }
+      ]
+     },
+     {
+      "canonical": "LinkedIn",
+      "members": [
+       {
+        "value": "LinkedIn",
+        "count": 174,
+        "seq": 8
+       },
+       {
+        "value": "Linkedin",
+        "count": 100,
+        "seq": 9
+       },
+       {
+        "value": "Linked In",
+        "count": 30,
+        "seq": 10
+       }
+      ]
+     },
+     {
+      "canonical": "Referral",
+      "members": [
+       {
+        "value": "Referral",
+        "count": 174,
+        "seq": 11
+       },
+       {
+        "value": "Referal",
+        "count": 53,
+        "seq": 12
+       },
+       {
+        "value": "Referrals",
+        "count": 25,
+        "seq": 13
+       }
+      ]
+     },
+     {
+      "canonical": "Trade Show",
+      "members": [
+       {
+        "value": "Trade Show",
+        "count": 96,
+        "seq": 14
+       },
+       {
+        "value": "Tradeshow",
+        "count": 64,
+        "seq": 15
+       },
+       {
+        "value": "Trade Show 2023",
+        "count": 63,
+        "seq": 17
+       },
+       {
+        "value": "Trade show",
+        "count": 31,
+        "seq": 16
+       }
+      ]
+     },
+     {
+      "canonical": "Email Campaign",
+      "members": [
+       {
+        "value": "Email Campaign",
+        "count": 105,
+        "seq": 18
+       },
+       {
+        "value": "Email campaign",
+        "count": 26,
+        "seq": 20
+       },
+       {
+        "value": "E-mail Campaign",
+        "count": 25,
+        "seq": 19
+       }
+      ]
+     }
+    ],
+    "values": [
+     {
+      "value": "Website",
+      "count": 645,
+      "seq": 1
+     },
+     {
+      "value": "Web Form",
+      "count": 369,
+      "seq": 2
+     },
+     {
+      "value": "web form",
+      "count": 115,
+      "seq": 3
+     },
+     {
+      "value": "Web Site",
+      "count": 61,
+      "seq": 4
+     },
+     {
+      "value": "Google Ads",
+      "count": 322,
+      "seq": 5
+     },
+     {
+      "value": "Google Adwords",
+      "count": 171,
+      "seq": 6
+     },
+     {
+      "value": "google ads",
+      "count": 45,
+      "seq": 7
+     },
+     {
+      "value": "LinkedIn",
+      "count": 174,
+      "seq": 8
+     },
+     {
+      "value": "Linkedin",
+      "count": 100,
+      "seq": 9
+     },
+     {
+      "value": "Linked In",
+      "count": 30,
+      "seq": 10
+     },
+     {
+      "value": "Referral",
+      "count": 174,
+      "seq": 11
+     },
+     {
+      "value": "Referal",
+      "count": 53,
+      "seq": 12
+     },
+     {
+      "value": "Referrals",
+      "count": 25,
+      "seq": 13
+     },
+     {
+      "value": "Trade Show",
+      "count": 96,
+      "seq": 14
+     },
+     {
+      "value": "Tradeshow",
+      "count": 64,
+      "seq": 15
+     },
+     {
+      "value": "Trade show",
+      "count": 31,
+      "seq": 16
+     },
+     {
+      "value": "Trade Show 2023",
+      "count": 63,
+      "seq": 17
+     },
+     {
+      "value": "Email Campaign",
+      "count": 105,
+      "seq": 18
+     },
+     {
+      "value": "E-mail Campaign",
+      "count": 25,
+      "seq": 19
+     },
+     {
+      "value": "Email campaign",
+      "count": 26,
+      "seq": 20
+     },
+     {
+      "value": "Cold Call",
+      "count": 204,
+      "seq": 21
+     },
+     {
+      "value": "Partner",
+      "count": 99,
+      "seq": 22
+     },
+     {
+      "value": "Chat",
+      "count": 84,
+      "seq": 23
+     },
+     {
+      "value": "Employee Referral",
+      "count": 25,
+      "seq": 24
+     },
+     {
+      "value": "External Referral",
+      "count": 28,
+      "seq": 25
+     },
+     {
+      "value": "Advertisement",
+      "count": 0,
+      "seq": 26
+     },
+     {
+      "value": "Online Store",
+      "count": 0,
+      "seq": 27
+     },
+     {
+      "value": "Public Relations",
+      "count": 0,
+      "seq": 28
+     },
+     {
+      "value": "Sales Email Alias",
+      "count": 0,
+      "seq": 29
+     },
+     {
+      "value": "Seminar Partner",
+      "count": 0,
+      "seq": 30
+     },
+     {
+      "value": "Web Research",
+      "count": 0,
+      "seq": 31
+     },
+     {
+      "value": "Internal Seminar",
+      "count": 0,
+      "seq": 32
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Lead_Status",
+    "label": "Lead Status",
+    "defined": 8,
+    "used": 8,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Not Contacted",
+      "count": 1061,
+      "seq": 1
+     },
+     {
+      "value": "Attempted to Contact",
+      "count": 726,
+      "seq": 2
+     },
+     {
+      "value": "Contact in Future",
+      "count": 246,
+      "seq": 3
+     },
+     {
+      "value": "Contacted",
+      "count": 491,
+      "seq": 4
+     },
+     {
+      "value": "Pre-Qualified",
+      "count": 251,
+      "seq": 5
+     },
+     {
+      "value": "Not Qualified",
+      "count": 157,
+      "seq": 6
+     },
+     {
+      "value": "Junk Lead",
+      "count": 125,
+      "seq": 7
+     },
+     {
+      "value": "Lost Lead",
+      "count": 77,
+      "seq": 8
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Industry",
+    "label": "Industry",
+    "defined": 10,
+    "used": 10,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Healthcare",
+      "count": 212,
+      "seq": 1
+     },
+     {
+      "value": "Manufacturing",
+      "count": 213,
+      "seq": 2
+     },
+     {
+      "value": "Hospitality",
+      "count": 229,
+      "seq": 3
+     },
+     {
+      "value": "Education",
+      "count": 202,
+      "seq": 4
+     },
+     {
+      "value": "Retail",
+      "count": 221,
+      "seq": 5
+     },
+     {
+      "value": "Logistics",
+      "count": 222,
+      "seq": 6
+     },
+     {
+      "value": "Construction",
+      "count": 241,
+      "seq": 7
+     },
+     {
+      "value": "Real Estate",
+      "count": 217,
+      "seq": 8
+     },
+     {
+      "value": "Food & Beverage",
+      "count": 204,
+      "seq": 9
+     },
+     {
+      "value": "Fitness",
+      "count": 216,
+      "seq": 10
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Rating",
+    "label": "Rating",
+    "defined": 3,
+    "used": 3,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Hot",
+      "count": 511,
+      "seq": 1
+     },
+     {
+      "value": "Warm",
+      "count": 516,
+      "seq": 2
+     },
+     {
+      "value": "Cold",
+      "count": 518,
+      "seq": 3
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Product_Interest",
+    "label": "Product Interest",
+    "defined": 5,
+    "used": 5,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Janitorial Supplies",
+      "count": 346,
+      "seq": 1
+     },
+     {
+      "value": "Paper Products",
+      "count": 391,
+      "seq": 2
+     },
+     {
+      "value": "Safety & PPE",
+      "count": 358,
+      "seq": 3
+     },
+     {
+      "value": "Breakroom",
+      "count": 378,
+      "seq": 4
+     },
+     {
+      "value": "Equipment Service",
+      "count": 385,
+      "seq": 5
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Region",
+    "label": "Region",
+    "defined": 5,
+    "used": 5,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Northeast",
+      "count": 325,
+      "seq": 1
+     },
+     {
+      "value": "Southeast",
+      "count": 360,
+      "seq": 2
+     },
+     {
+      "value": "Midwest",
+      "count": 317,
+      "seq": 3
+     },
+     {
+      "value": "Southwest",
+      "count": 343,
+      "seq": 4
+     },
+     {
+      "value": "West",
+      "count": 360,
+      "seq": 5
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Budget_Range",
+    "label": "Budget Range",
+    "defined": 4,
+    "used": 4,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "< $5k",
+      "count": 223,
+      "seq": 1
+     },
+     {
+      "value": "$5k-$25k",
+      "count": 237,
+      "seq": 2
+     },
+     {
+      "value": "$25k-$100k",
+      "count": 237,
+      "seq": 3
+     },
+     {
+      "value": "> $100k",
+      "count": 244,
+      "seq": 4
+     }
+    ]
+   },
+   {
+    "module": "Leads",
+    "field": "Preferred_Contact",
+    "label": "Preferred Contact",
+    "defined": 3,
+    "used": 3,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Email",
+      "count": 37,
+      "seq": 1
+     },
+     {
+      "value": "Phone",
+      "count": 30,
+      "seq": 2
+     },
+     {
+      "value": "Text",
+      "count": 32,
+      "seq": 3
+     }
+    ]
+   },
+   {
+    "module": "Deals",
+    "field": "Stage",
+    "label": "Stage",
+    "defined": 8,
+    "used": 8,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Qualification",
+      "count": 113,
+      "seq": 1
+     },
+     {
+      "value": "Needs Analysis",
+      "count": 84,
+      "seq": 2
+     },
+     {
+      "value": "Proposal/Price Quote",
+      "count": 106,
+      "seq": 3
+     },
+     {
+      "value": "Negotiation/Review",
+      "count": 55,
+      "seq": 4
+     },
+     {
+      "value": "Closed Won",
+      "count": 164,
+      "seq": 5
+     },
+     {
+      "value": "Closed Lost",
+      "count": 141,
+      "seq": 6
+     },
+     {
+      "value": "Value Proposition",
+      "count": 7,
+      "seq": 7
+     },
+     {
+      "value": "Id. Decision Makers",
+      "count": 10,
+      "seq": 8
+     }
+    ]
+   },
+   {
+    "module": "Deals",
+    "field": "Pipeline",
+    "label": "Pipeline",
+    "defined": 1,
+    "used": 1,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Standard (Standard)",
+      "count": 680,
+      "seq": 1
+     }
+    ]
+   },
+   {
+    "module": "Deals",
+    "field": "Lead_Source",
+    "label": "Lead Source",
+    "defined": 32,
+    "used": 25,
+    "unused": [
+     "Advertisement",
+     "Online Store",
+     "Public Relations",
+     "Sales Email Alias",
+     "Seminar Partner",
+     "Web Research",
+     "Internal Seminar"
+    ],
+    "offList": [],
+    "groups": [
+     {
+      "canonical": "Website",
+      "members": [
+       {
+        "value": "Website",
+        "count": 138,
+        "seq": 1
+       },
+       {
+        "value": "Web Site",
+        "count": 10,
+        "seq": 4
+       }
+      ]
+     },
+     {
+      "canonical": "Web Form",
+      "members": [
+       {
+        "value": "Web Form",
+        "count": 88,
+        "seq": 2
+       },
+       {
+        "value": "web form",
+        "count": 27,
+        "seq": 3
+       }
+      ]
+     },
+     {
+      "canonical": "Google Ads",
+      "members": [
+       {
+        "value": "Google Ads",
+        "count": 69,
+        "seq": 5
+       },
+       {
+        "value": "google ads",
+        "count": 15,
+        "seq": 7
+       }
+      ]
+     },
+     {
+      "canonical": "LinkedIn",
+      "members": [
+       {
+        "value": "LinkedIn",
+        "count": 42,
+        "seq": 8
+       },
+       {
+        "value": "Linkedin",
+        "count": 25,
+        "seq": 9
+       },
+       {
+        "value": "Linked In",
+        "count": 5,
+        "seq": 10
+       }
+      ]
+     },
+     {
+      "canonical": "Referral",
+      "members": [
+       {
+        "value": "Referral",
+        "count": 38,
+        "seq": 11
+       },
+       {
+        "value": "Referal",
+        "count": 12,
+        "seq": 12
+       },
+       {
+        "value": "Referrals",
+        "count": 3,
+        "seq": 13
+       }
+      ]
+     },
+     {
+      "canonical": "Trade Show",
+      "members": [
+       {
+        "value": "Trade Show",
+        "count": 17,
+        "seq": 14
+       },
+       {
+        "value": "Tradeshow",
+        "count": 14,
+        "seq": 15
+       },
+       {
+        "value": "Trade Show 2023",
+        "count": 11,
+        "seq": 17
+       },
+       {
+        "value": "Trade show",
+        "count": 8,
+        "seq": 16
+       }
+      ]
+     },
+     {
+      "canonical": "Email Campaign",
+      "members": [
+       {
+        "value": "Email Campaign",
+        "count": 23,
+        "seq": 18
+       },
+       {
+        "value": "Email campaign",
+        "count": 4,
+        "seq": 20
+       },
+       {
+        "value": "E-mail Campaign",
+        "count": 2,
+        "seq": 19
+       }
+      ]
+     }
+    ],
+    "values": [
+     {
+      "value": "Website",
+      "count": 138,
+      "seq": 1
+     },
+     {
+      "value": "Web Form",
+      "count": 88,
+      "seq": 2
+     },
+     {
+      "value": "web form",
+      "count": 27,
+      "seq": 3
+     },
+     {
+      "value": "Web Site",
+      "count": 10,
+      "seq": 4
+     },
+     {
+      "value": "Google Ads",
+      "count": 69,
+      "seq": 5
+     },
+     {
+      "value": "Google Adwords",
+      "count": 40,
+      "seq": 6
+     },
+     {
+      "value": "google ads",
+      "count": 15,
+      "seq": 7
+     },
+     {
+      "value": "LinkedIn",
+      "count": 42,
+      "seq": 8
+     },
+     {
+      "value": "Linkedin",
+      "count": 25,
+      "seq": 9
+     },
+     {
+      "value": "Linked In",
+      "count": 5,
+      "seq": 10
+     },
+     {
+      "value": "Referral",
+      "count": 38,
+      "seq": 11
+     },
+     {
+      "value": "Referal",
+      "count": 12,
+      "seq": 12
+     },
+     {
+      "value": "Referrals",
+      "count": 3,
+      "seq": 13
+     },
+     {
+      "value": "Trade Show",
+      "count": 17,
+      "seq": 14
+     },
+     {
+      "value": "Tradeshow",
+      "count": 14,
+      "seq": 15
+     },
+     {
+      "value": "Trade show",
+      "count": 8,
+      "seq": 16
+     },
+     {
+      "value": "Trade Show 2023",
+      "count": 11,
+      "seq": 17
+     },
+     {
+      "value": "Email Campaign",
+      "count": 23,
+      "seq": 18
+     },
+     {
+      "value": "E-mail Campaign",
+      "count": 2,
+      "seq": 19
+     },
+     {
+      "value": "Email campaign",
+      "count": 4,
+      "seq": 20
+     },
+     {
+      "value": "Cold Call",
+      "count": 41,
+      "seq": 21
+     },
+     {
+      "value": "Partner",
+      "count": 22,
+      "seq": 22
+     },
+     {
+      "value": "Chat",
+      "count": 18,
+      "seq": 23
+     },
+     {
+      "value": "Employee Referral",
+      "count": 3,
+      "seq": 24
+     },
+     {
+      "value": "External Referral",
+      "count": 5,
+      "seq": 25
+     },
+     {
+      "value": "Advertisement",
+      "count": 0,
+      "seq": 26
+     },
+     {
+      "value": "Online Store",
+      "count": 0,
+      "seq": 27
+     },
+     {
+      "value": "Public Relations",
+      "count": 0,
+      "seq": 28
+     },
+     {
+      "value": "Sales Email Alias",
+      "count": 0,
+      "seq": 29
+     },
+     {
+      "value": "Seminar Partner",
+      "count": 0,
+      "seq": 30
+     },
+     {
+      "value": "Web Research",
+      "count": 0,
+      "seq": 31
+     },
+     {
+      "value": "Internal Seminar",
+      "count": 0,
+      "seq": 32
+     }
+    ]
+   },
+   {
+    "module": "Deals",
+    "field": "Product_Line",
+    "label": "Product Line",
+    "defined": 5,
+    "used": 5,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Janitorial Supplies",
+      "count": 85,
+      "seq": 1
+     },
+     {
+      "value": "Paper Products",
+      "count": 88,
+      "seq": 2
+     },
+     {
+      "value": "Safety & PPE",
+      "count": 91,
+      "seq": 3
+     },
+     {
+      "value": "Breakroom",
+      "count": 113,
+      "seq": 4
+     },
+     {
+      "value": "Equipment Service",
+      "count": 89,
+      "seq": 5
+     }
+    ]
+   },
+   {
+    "module": "Deals",
+    "field": "Loss_Reason",
+    "label": "Loss Reason",
+    "defined": 5,
+    "used": 5,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Price",
+      "count": 8,
+      "seq": 1
+     },
+     {
+      "value": "Competitor",
+      "count": 16,
+      "seq": 2
+     },
+     {
+      "value": "No Decision",
+      "count": 7,
+      "seq": 3
+     },
+     {
+      "value": "Timing",
+      "count": 10,
+      "seq": 4
+     },
+     {
+      "value": "Other",
+      "count": 12,
+      "seq": 5
+     }
+    ]
+   },
+   {
+    "module": "Accounts",
+    "field": "Industry",
+    "label": "Industry",
+    "defined": 10,
+    "used": 10,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Healthcare",
+      "count": 47,
+      "seq": 1
+     },
+     {
+      "value": "Manufacturing",
+      "count": 50,
+      "seq": 2
+     },
+     {
+      "value": "Hospitality",
+      "count": 57,
+      "seq": 3
+     },
+     {
+      "value": "Education",
+      "count": 46,
+      "seq": 4
+     },
+     {
+      "value": "Retail",
+      "count": 59,
+      "seq": 5
+     },
+     {
+      "value": "Logistics",
+      "count": 48,
+      "seq": 6
+     },
+     {
+      "value": "Construction",
+      "count": 49,
+      "seq": 7
+     },
+     {
+      "value": "Real Estate",
+      "count": 59,
+      "seq": 8
+     },
+     {
+      "value": "Food & Beverage",
+      "count": 56,
+      "seq": 9
+     },
+     {
+      "value": "Fitness",
+      "count": 49,
+      "seq": 10
+     }
+    ]
+   },
+   {
+    "module": "Accounts",
+    "field": "Region",
+    "label": "Region",
+    "defined": 5,
+    "used": 5,
+    "unused": [],
+    "offList": [],
+    "groups": [],
+    "values": [
+     {
+      "value": "Northeast",
+      "count": 82,
+      "seq": 1
+     },
+     {
+      "value": "Southeast",
+      "count": 75,
+      "seq": 2
+     },
+     {
+      "value": "Midwest",
+      "count": 105,
+      "seq": 3
+     },
+     {
+      "value": "Southwest",
+      "count": 81,
+      "seq": 4
+     },
+     {
+      "value": "West",
+      "count": 79,
+      "seq": 5
+     }
+    ]
+   }
+  ],
+  "sparse": [
+   {
+    "module": "Contacts",
+    "field": "Birthday_Card",
+    "label": "Birthday Card",
+    "filled": 13,
+    "rate": 0.009015256588072122
+   },
+   {
+    "module": "Leads",
+    "field": "Fax_Alt",
+    "label": "Fax (alt)",
+    "filled": 10,
+    "rate": 0.003190810465858328
+   },
+   {
+    "module": "Leads",
+    "field": "Trade_Show_2022",
+    "label": "Trade Show 2022",
+    "filled": 45,
+    "rate": 0.014358647096362476
+   },
+   {
+    "module": "Leads",
+    "field": "Temp_Import_Batch",
+    "label": "Temp Import Batch",
+    "filled": 0,
+    "rate": 0
+   },
+   {
+    "module": "Leads",
+    "field": "Second_Email_Old",
+    "label": "Second Email (old)",
+    "filled": 26,
+    "rate": 0.008296107211231652
+   }
+  ],
+  "overdue": [
+   "6123456000000105369",
+   "6123456000000105371",
+   "6123456000000105373",
+   "6123456000000105374",
+   "6123456000000105375",
+   "6123456000000105383",
+   "6123456000000105385",
+   "6123456000000105389",
+   "6123456000000105393",
+   "6123456000000105404",
+   "6123456000000105411",
+   "6123456000000105416",
+   "6123456000000105417",
+   "6123456000000105433",
+   "6123456000000105439",
+   "6123456000000105444",
+   "6123456000000105447",
+   "6123456000000105455",
+   "6123456000000105459",
+   "6123456000000105467",
+   "6123456000000105471",
+   "6123456000000105472",
+   "6123456000000105473",
+   "6123456000000105478",
+   "6123456000000105494",
+   "6123456000000105495",
+   "6123456000000105496",
+   "6123456000000105497",
+   "6123456000000105502",
+   "6123456000000105506",
+   "6123456000000105513",
+   "6123456000000105516",
+   "6123456000000105519",
+   "6123456000000105524",
+   "6123456000000105529",
+   "6123456000000105530",
+   "6123456000000105534",
+   "6123456000000105541",
+   "6123456000000105542",
+   "6123456000000105544",
+   "6123456000000105545",
+   "6123456000000105551",
+   "6123456000000105557",
+   "6123456000000105564",
+   "6123456000000105565",
+   "6123456000000105577",
+   "6123456000000105580",
+   "6123456000000105583",
+   "6123456000000105591",
+   "6123456000000105593",
+   "6123456000000105601",
+   "6123456000000105603",
+   "6123456000000105607",
+   "6123456000000105609",
+   "6123456000000105616",
+   "6123456000000105618",
+   "6123456000000105619",
+   "6123456000000105627",
+   "6123456000000105633",
+   "6123456000000105634",
+   "6123456000000105635",
+   "6123456000000105645",
+   "6123456000000105648",
+   "6123456000000105650",
+   "6123456000000105658",
+   "6123456000000105662",
+   "6123456000000105664",
+   "6123456000000105669",
+   "6123456000000105673",
+   "6123456000000105674",
+   "6123456000000105678",
+   "6123456000000105680",
+   "6123456000000105681",
+   "6123456000000105697",
+   "6123456000000105704",
+   "6123456000000105719",
+   "6123456000000105722",
+   "6123456000000105724",
+   "6123456000000105725",
+   "6123456000000105730",
+   "6123456000000105736",
+   "6123456000000105752",
+   "6123456000000105753",
+   "6123456000000105757",
+   "6123456000000105766",
+   "6123456000000105773",
+   "6123456000000105788",
+   "6123456000000105791",
+   "6123456000000105795",
+   "6123456000000105799",
+   "6123456000000105801",
+   "6123456000000105806",
+   "6123456000000105815",
+   "6123456000000105818",
+   "6123456000000105819",
+   "6123456000000105828",
+   "6123456000000105835",
+   "6123456000000105837",
+   "6123456000000105845",
+   "6123456000000105846",
+   "6123456000000105855",
+   "6123456000000105861",
+   "6123456000000105865",
+   "6123456000000105867",
+   "6123456000000105881",
+   "6123456000000105889",
+   "6123456000000105891",
+   "6123456000000105896",
+   "6123456000000105897",
+   "6123456000000105918",
+   "6123456000000105926",
+   "6123456000000105927",
+   "6123456000000105937",
+   "6123456000000105941",
+   "6123456000000105943",
+   "6123456000000105947",
+   "6123456000000105949",
+   "6123456000000105956",
+   "6123456000000105960",
+   "6123456000000105961",
+   "6123456000000105973",
+   "6123456000000105976",
+   "6123456000000105988",
+   "6123456000000105989",
+   "6123456000000105993",
+   "6123456000000105998",
+   "6123456000000106005",
+   "6123456000000106006",
+   "6123456000000106011",
+   "6123456000000106013",
+   "6123456000000106014",
+   "6123456000000106015",
+   "6123456000000106017",
+   "6123456000000106019",
+   "6123456000000106020",
+   "6123456000000106028"
+  ],
+  "legacy": [
+   "6123456000000105380",
+   "6123456000000105457",
+   "6123456000000105458",
+   "6123456000000105494",
+   "6123456000000105500",
+   "6123456000000105510",
+   "6123456000000105579",
+   "6123456000000105623",
+   "6123456000000105682",
+   "6123456000000105802",
+   "6123456000000105807",
+   "6123456000000105890",
+   "6123456000000105908",
+   "6123456000000105911",
+   "6123456000000105998",
+   "6123456000000106020",
+   "6123456000000106028"
+  ],
+  "open": 375,
+  "stages": [
+   "Qualification",
+   "Needs Analysis",
+   "Proposal/Price Quote",
+   "Negotiation/Review",
+   "Closed Won",
+   "Closed Lost"
+  ],
+  "inactiveUsers": [
+   "6123456000000100016"
+  ]
+ }
+}
